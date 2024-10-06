@@ -2,16 +2,43 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Body Styling */
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Add specific typography or spacing overrides if needed */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+/* Example of a responsive container */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Utility for text styling */
+.font-bold {
+  font-weight: 700;
+}
+
+/* Customize Tailwind utilities as needed */
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.text-dark {
+  color: #333;
 }

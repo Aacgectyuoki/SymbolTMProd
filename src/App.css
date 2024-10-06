@@ -1,33 +1,85 @@
+/* General app structure */
 .App {
-  text-align: center;
+  text-align: left; /* Left-aligned for a modern, clean look */
 }
 
+/* Logo Styling */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Header Section */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #ffffff; /* Light background */
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navigation Links */
+nav a {
+  color: #333; /* Dark text color for better readability */
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
+nav a:hover {
+  color: #007BFF; /* Light blue hover color for links */
+}
+
+/* Section for showcasing projects */
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.showcase-item {
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.showcase-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.showcase-item h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Keyframe Animation (Remove this if not needed) */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
