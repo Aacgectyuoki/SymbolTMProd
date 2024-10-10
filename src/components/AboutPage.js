@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../assets/images/symboltm-logo.png';
 
 const AboutPage = () => {
   return (
@@ -6,7 +7,7 @@ const AboutPage = () => {
       {/* Header */}
       <header className="bg-white shadow p-6">
         <div className="container mx-auto flex justify-between items-center">
-          <img src="../assets/images/symboltm-logo.png" alt="SymbolTM" className="h-12" />
+        <img src={logo} alt="SymbolTM" className="h-12" />
           <nav className="hidden md:flex space-x-4">
             <a href="/" className="text-gray-600 hover:text-gray-800">Work</a>
             <a href="/about" className="text-gray-600 hover:text-gray-800">About</a>
@@ -30,25 +31,34 @@ const AboutPage = () => {
       </section>
 
       {/* Services Section */}
-      <section className="bg-gray-100 py-12">
+      <section id="services" className="bg-gray-100 py-12">
         <div className="container mx-auto text-gray-700">
-          <h3 className="text-2xl font-semibold mb-6">Services</h3>
-          <ul className="list-disc ml-6 mt-4 space-y-2">
-            <li>Analysis: Provide thorough research through analysis and develops winning solutions.</li>
-            <li>Strategy: Orchestrate planning to implementation.</li>
-            <li>Creativity: Provide logo options, icons, innovative design and ideation.</li>
-            <li>Management: Develop comprehensive plan from conception to launch.</li>
-          </ul>
+            {/* Services Title - Bold */}
+            <h3 className="text-2xl inter-bold mb-6">Services</h3>
+
+            {/* Services Description */}
+            <p className="inter-light mb-6">
+            Our approach is flexible and scalable and designed to add the maximum value – whatever our client’s timescale or budget. Ideally, we like to be involved early in the lifecycle of a project, so we can invest time to understand our clients’ challenges in depth and provide full solutions. But our modular approach makes it easy for clients to use us for individual services whenever they wish.
+            </p>
+
+            {/* List of Services */}
+            <ul className="list-decimal pl-4 space-y-4">
+            <li className="inter-bold">Analysis: <span className="inter-light">Provide thorough research through analysis and develop winning solutions.</span></li>
+            <li className="inter-bold">Strategy: <span className="inter-light">Orchestrate planning to implementation.</span></li>
+            <li className="inter-bold">Creativity: <span className="inter-light">Provide logo options, icons, innovative design and ideation.</span></li>
+            <li className="inter-bold">Management: <span className="inter-light">Develop comprehensive plan from conception to launch including:</span></li>
+            </ul>
         </div>
       </section>
 
+
       {/* Contact Section */}
-      <section className="bg-white py-8">
+      <section id="contact" className="bg-white py-8">
         <div className="container mx-auto">
           <h2 className="text-2xl font-semibold mb-4">Get in touch.</h2>
-          <p>Email: Hi@SymbolTM.com</p>
-          <p>Mobile: +1 480 717 0449</p>
-          <p>Office: 7202 North 15th Pl., Phoenix, AZ 85020</p>
+          <p className="inter-bold">Email: <span className="inter-light">Hi@SymbolTM.com</span></p>
+          <p className="inter-bold">Mobile: <span className="inter-light">+1 480 717 0449</span></p>
+          <p className="inter-bold">Office: <span className="inter-light">7202 North 15th Pl., Phoenix, AZ 85020</span></p>
         </div>
       </section>
     </div>

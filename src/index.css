@@ -2,17 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Body Styling */
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Custom Body Styling */
+
+/* Define class for Inter Light 300 */
+.inter-light {
+  font-family: "Inter", sans-serif;
+  font-weight: 300; /* Use Tailwind's font-light utility for this as well */
+  font-style: normal;
+}
+
+/* Define class for Inter Bold 700 */
+.inter-bold {
+  font-family: "Inter", sans-serif;
+  font-weight: 700; /* You can also use Tailwind's font-bold */
+  font-style: normal;
 }
 
 /* Add specific typography or spacing overrides if needed */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  @apply font-bold; /* Using Tailwind utility */
 }
 
 p {
@@ -20,7 +28,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* Example of a responsive container */
+/* Responsive container */
 .container {
   max-width: 1200px;
   margin-left: auto;
@@ -29,12 +37,7 @@ p {
   padding-right: 1rem;
 }
 
-/* Utility for text styling */
-.font-bold {
-  font-weight: 700;
-}
-
-/* Customize Tailwind utilities as needed */
+/* Custom Utilities */
 .bg-light {
   background-color: #f8f9fa;
 }
