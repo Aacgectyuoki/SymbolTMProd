@@ -94,21 +94,25 @@ const DefaultPage = () => {
 
       {/* Services Section */}
       <section id="services" className="bg-gray-100 py-12">
-        <div className="container mx-auto text-gray-700">
+        <div className="container mx-auto text-black-700">
           {/* Services Title - Bold */}
-          <h3 className="text-2xl inter-bold mb-6">Services</h3>
+          <h3 className="text-2xl font-avenir-bold mb-6">Services: 
+          <span className="text-2xl font-avenir-light mb-6"> Our approach is flexible and scalable and designed to add the maximum value – 
+          whatever our client’s timescale or budget. Ideally, we like to be involved early in the lifecycle of a project, 
+          so we can invest time to understand our clients’ challenges in depth and provide full solutions. 
+          But our modular approach makes it easy for clients to use us for individual services whenever they wish.</span></h3>
 
           {/* Services Description */}
-          <p className="inter-light mb-6">
-            Our approach is flexible and scalable and designed to add the maximum value – whatever our client’s timescale or budget. Ideally, we like to be involved early in the lifecycle of a project, so we can invest time to understand our clients’ challenges in depth and provide full solutions. But our modular approach makes it easy for clients to use us for individual services whenever they wish.
-          </p>
+          {/* <p className="font-avenir-light mb-6"> */}
+            
+          {/* </p> */}
 
           {/* List of Services */}
           <ul className="list-decimal pl-4 space-y-4">
-            <li className="inter-bold">Analysis: <span className="inter-light">Provide thorough research through analysis and develop winning solutions.</span></li>
-            <li className="inter-bold">Strategy: <span className="inter-light">Orchestrate planning to implementation.</span></li>
-            <li className="inter-bold">Creativity: <span className="inter-light">Provide logo options, icons, innovative design and ideation.</span></li>
-            <li className="inter-bold">Management: <span className="inter-light">Develop comprehensive plan from conception to launch including:</span></li>
+            <li className="font-avenir-bold">Analysis: <span className="font-avenir-light">Provide thorough research through analysis and develop winning solutions.</span></li>
+            <li className="font-avenir-bold">Strategy: <span className="font-avenir-light">Orchestrate planning to implementation.</span></li>
+            <li className="font-avenir-bold">Creativity: <span className="font-avenir-light">Provide logo options, icons, innovative design and ideation.</span></li>
+            <li className="font-avenir-bold">Management: <span className="font-avenir-light">Develop comprehensive plan from conception to launch including:</span></li>
           </ul>
         </div>
       </section>

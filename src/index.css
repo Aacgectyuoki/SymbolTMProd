@@ -1,22 +1,28 @@
+/* @import './assets/fonts/fonts.css'; */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Body Styling */
 
-/* Define class for Inter Light 300 */
-.inter-light {
-  font-family: "Inter", sans-serif;
-  font-weight: 300; /* Use Tailwind's font-light utility for this as well */
-  font-style: normal;
+/* Regular (normal weight) */
+.font-avenir-regular {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400; /* Normal weight */
 }
 
-/* Define class for Inter Bold 700 */
-.inter-bold {
-  font-family: "Inter", sans-serif;
-  font-weight: 700; /* You can also use Tailwind's font-bold */
-  font-style: normal;
+/* Light (300 weight) */
+.font-avenir-light {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300; /* Light weight */
 }
+
+/* Bold (700 weight) */
+.font-avenir-bold {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800; /* Bold weight */
+}
+
 
 /* Add specific typography or spacing overrides if needed */
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-  font-weight: 400;
+  /* font-weight: 400; */
   margin-bottom: 1rem;
 }
 
