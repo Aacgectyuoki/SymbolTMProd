@@ -1,20 +1,82 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/images/symboltm-logo.png';
 
 const AboutPage = () => {
+  const [workDropdown, setWorkDropdown] = useState(false); // Dropdown state for 'Work'
+  const [aboutDropdown, setAboutDropdown] = useState(false); // Dropdown state for 'About'
+  const [isOpen, setIsOpen] = useState(false); // Hamburger menu state
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <header className="bg-white shadow p-6">
         <div className="container mx-auto flex justify-between items-center">
-        <img src={logo} alt="SymbolTM" className="h-12" />
+          <img src={logo} alt="SymbolTM" className="h-12" />
           <nav className="hidden md:flex space-x-4">
-            <a href="/" className="text-gray-600 hover:text-gray-800">Work</a>
-            <a href="/about" className="text-gray-600 hover:text-gray-800">About</a>
-            <a href="#services" className="text-gray-600 hover:text-gray-800">Services</a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-800">Contact</a>
+            <div
+              className="relative"
+              onMouseEnter={() => setWorkDropdown(true)}
+              onMouseLeave={() => setWorkDropdown(false)}
+            >
+              <a href="/" className="text-gray-600 hover:text-gray-800">Work</a>
+              {workDropdown && (
+                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
+                  <a href="#services" className="block px-4 py-2 hover:bg-gray-200">Services</a>
+                  <a href="#contact" className="block px-4 py-2 hover:bg-gray-200">Contact</a>
+                </div>
+              )}
+            </div>
+            <div
+              className="relative"
+              onMouseEnter={() => setAboutDropdown(true)}
+              onMouseLeave={() => setAboutDropdown(false)}
+            >
+              <a href="/about" className="text-gray-600 hover:text-gray-800">About</a>
+              {aboutDropdown && (
+                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
+                  <a href="#services" className="block px-4 py-2 hover:bg-gray-200">Services</a>
+                  <a href="#contact" className="block px-4 py-2 hover:bg-gray-200">Contact</a>
+                </div>
+              )}
+            </div>
+            {/* <a href="#services" className="text-gray-600 hover:text-gray-800">Services</a>
+            <a href="#contact" className="text-gray-600 hover:text-gray-800">Contact</a> */}
           </nav>
+
+          {/* Hamburger Menu Button */}
+          <button 
+            className="md:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600"
+            onClick={toggleMenu}
+          >
+            <svg className="fill-current h-6 w-6" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isOpen && (
+          <nav className="md:hidden bg-white space-y-4 p-4">
+            <div>
+              <a href="/" className="block text-gray-600 hover:text-gray-800">Work</a>
+              <div className="pl-4">
+                <a href="#services" className="block text-gray-600 hover:text-gray-800">Services</a>
+                <a href="#contact" className="block text-gray-600 hover:text-gray-800">Contact</a>
+              </div>
+            </div>
+            <div>
+              <a href="/about" className="block text-gray-600 hover:text-gray-800">About</a>
+              <div className="pl-4">
+                <a href="#services" className="block text-gray-600 hover:text-gray-800">Services</a>
+                <a href="#contact" className="block text-gray-600 hover:text-gray-800">Contact</a>
+              </div>
+            </div>
+          </nav>
+        )}
       </header>
 
       {/* About Content */}
@@ -50,7 +112,6 @@ const AboutPage = () => {
             </ul>
         </div>
       </section>
-
 
       {/* Contact Section */}
       <section id="contact" className="bg-white py-8">

@@ -20,13 +20,13 @@
 /* Bold (700 weight) */
 .font-avenir-bold {
   font-family: 'Avenir', sans-serif;
-  font-weight: 800; /* Bold weight */
+  font-weight: 1200; /* Bold weight */
 }
 
 
 /* Add specific typography or spacing overrides if needed */
 h1, h2, h3, h4, h5, h6 {
-  @apply font-bold; /* Using Tailwind utility */
+ /* @apply font-bold;  Using Tailwind utility */
 }
 
 p {
