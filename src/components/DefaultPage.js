@@ -129,23 +129,25 @@ const DefaultPage = () => {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="bg-gray-100 py-12">
-        <div className="container mx-auto text-black-700">
-          <h3 className="text-2xl font-avenir-bold mb-6">Services</h3>
-          <p className="font-avenir-light mb-6">
-            Our approach is flexible and scalable and designed to add the maximum value – 
-            whatever our client’s timescale or budget. Ideally, we like to be involved early in the lifecycle of a project, 
-            so we can invest time to understand our clients’ challenges in depth and provide full solutions. 
-            But our modular approach makes it easy for clients to use us for individual services whenever they wish.
-          </p>
+    <section id="services" className="bg-gray-100 py-12">
+      <div className="container mx-auto text-gray-700">
+          {/* Services Title - Extra Bold */}
+          <h3 className="text-2xl mb-6">
+            <span className="font-avenir-bold">Services:</span>
+            <span className="font-avenir-light"> Our approach is flexible and scalable...</span>
+          </h3>
+
+
+          {/* List of Services */}
           <ul className="list-decimal pl-4 space-y-4">
-            <li className="text-2xl font-avenir-bold">Analysis: <span className="text-2xl font-avenir-light">Provide thorough research through analysis and develop winning solutions.</span></li>
-            <li className="text-2xl font-avenir-bold">Strategy: <span className="text-2xl font-avenir-light">Orchestrate planning to implementation.</span></li>
-            <li className="text-2xl font-avenir-bold">Creativity: <span className="text-2xl font-avenir-light">Provide logo options, icons, innovative design and ideation.</span></li>
-            <li className="text-2xl font-avenir-bold">Management: <span className="text-2xl font-avenir-light">Develop comprehensive plan from conception to launch.</span></li>
+            <li className="font-avenir-light">Analysis: <span className="font-avenir-light">Provide thorough research through analysis and develop winning solutions.</span></li>
+            <li className="font-avenir-light">Strategy: <span className="font-avenir-light">Orchestrate planning to implementation.</span></li>
+            <li className="font-avenir-light">Creativity: <span className="font-avenir-light">Provide logo options, icons, innovative design and ideation.</span></li>
+            <li className="font-avenir-light">Management: <span className="font-avenir-light">Develop comprehensive plan from conception to launch including:</span></li>
           </ul>
-        </div>
-      </section>
+      </div>
+    </section>
+
 
       {/* Contact Section */}
       <section id="contact" className="bg-white py-8">

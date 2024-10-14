@@ -17,11 +17,18 @@
   font-weight: 300; /* Light weight */
 }
 
-/* Bold (700 weight) */
+/* Bold (900 weight w/ shadow) */
 .font-avenir-bold {
   font-family: 'Avenir', sans-serif;
-  font-weight: 1200; /* Bold weight */
+  font-weight: 900; /* Max weight Tailwind supports */
+  text-shadow: 1px 1px 0px black, -1px -1px 0px black, 1px -1px 0px black, -1px 1px 0px black;
 }
+
+/* .font-avenir-bold {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 900; /* Max weight 
+  transform: scale(1.1); Slightly scale up the text 
+} */
 
 
 /* Add specific typography or spacing overrides if needed */
