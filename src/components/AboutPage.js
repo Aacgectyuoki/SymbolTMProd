@@ -80,30 +80,36 @@ const AboutPage = () => {
       </header>
 
       {/* About Content */}
-      <section className="container mx-auto p-6">
-        <h1 className="text-3xl font-bold mb-4">About</h1>
-        <p className="mb-4">
-          SymbolTM is a boutique studio, providing a range of services. We are passionate about turning complex issues into simple solutions. 
-          Our experiences bring broad insights around brand symbols, icons, and stories, including research to ensure trademarks, domains, and copyright solutions.
-        </p>
-        <p className="mb-4">
-          Michael Thibodeau, a stroke survivor and brand strategist, has worked on world-class campaigns and developed iconic brands, including the MSN butterfly logo, Marriott International's identity, 
-          and much more.
-        </p>
+      <section id="About" className="bg-white-100 py-12">
+      <div className="container mx-auto text-gray-700">
+          {/* About Title - Extra Bold */}
+          <h3 className="text-2xl mb-6">
+            <span className="font-avenir-bold">About:</span>
+            <span className="font-avenir-light"> Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM </span> is 
+              a boutique studio, providing a range of services. 
+              We are truly passionate about turning complex issues into simple solutions. 
+              Our unique experiences bring broad insights around brand symbols, icons and stories, 
+              including rich research to ensure proper trademarks, domains and copyright solutions.</span>
+          </h3>
+        </div>
       </section>
 
-        {/* Services Section */}
-    <section id="services" className="bg-gray-100 py-12">
+          {/* Services Section */}
+    <section id="services" className="bg-white-100 py-12">
       <div className="container mx-auto text-gray-700">
           {/* Services Title - Extra Bold */}
           <h3 className="text-2xl mb-6">
             <span className="font-avenir-bold">Services:</span>
-            <span className="font-avenir-light"> Our approach is flexible and scalable...</span>
+            <span className="font-avenir-light"> Our approach is flexible and scalable and designed
+            to add the maximum value – whatever our client’s timescale or budget. 
+            Ideally, we like to be involved early in the lifecycle of a project, 
+            so we can invest time to understand our clients’ challenges in depth and provide full solutions. 
+            But our modular approach makes it easy for clients to use us for individual services whenever they wish.</span>
           </h3>
 
 
           {/* List of Services */}
-          <ul className="list-decimal pl-4 space-y-4">
+          <ul className="list-decimal pl-4 space-y-4 text-2xl mb-6">
             <li className="font-avenir-light">Analysis: <span className="font-avenir-light">Provide thorough research through analysis and develop winning solutions.</span></li>
             <li className="font-avenir-light">Strategy: <span className="font-avenir-light">Orchestrate planning to implementation.</span></li>
             <li className="font-avenir-light">Creativity: <span className="font-avenir-light">Provide logo options, icons, innovative design and ideation.</span></li>
