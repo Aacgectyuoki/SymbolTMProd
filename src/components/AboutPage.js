@@ -25,7 +25,7 @@ const AboutPage = () => {
           <img src={logo} alt="SymbolTM" className="h-12" />
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginLeft: '120px' }}>
             {/* Work Dropdown */}
             <div className="relative">
               <a

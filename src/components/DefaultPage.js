@@ -77,7 +77,7 @@ const DefaultPage = () => {
           <img src={logo} alt="SymbolTM" className="h-12" />
 
           {/* Desktop Menu */}
-          <nav className="hidden md:flex space-x-4">
+          <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginLeft: '-120px' }}>
             {/* Work Dropdown */}
             <div className="relative">
               <a
@@ -222,13 +222,27 @@ const DefaultPage = () => {
       </section>
 
       {/* Work Showcase */}
-      <section id="work" className="container bg-gray mx-auto p-6">
+      <section id="work" className="container mx-auto p-6">
         <h2 className="text-2xl font-avenir-bold mb-6">Our Work</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          className="grid justify-center"
+          style={{
+            gridTemplateColumns: 'repeat(auto-fit, 270px)', // Fixed width of 300px for each image
+            gap: '0px', // No gap between images
+            justifyItems: 'center',
+          }}
+        >
           {filteredProjects.map((project, index) => (
-            <div key={index} className="bg-gray shadow-lg rounded-lg overflow-hidden">
-              <img src={project.img} alt={project.name} className="h-40 w-full object-cover" />
-              {/* <h3 className="text-center mt-2 text-lg font-medium">{project.name}</h3> */}
+            <div
+              key={index}
+              className="shadow-lg overflow-hidden"
+              style={{ width: '270px', height: '200px' }} // Consistent width and height
+            >
+              <img
+                src={project.img}
+                alt={project.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>
