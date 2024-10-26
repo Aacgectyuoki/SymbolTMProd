@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 import wellzyperks from '../assets/images/WellzyPerks.png';
 import marfa from '../assets/images/The_City_of_Marfa.png';
@@ -20,11 +21,11 @@ import turvo from '../assets/images/Turvo.png';
 import miiamo from '../assets/images/Mii_amo.png';
 import edx from '../assets/images/edX.png';
 import geirness from '../assets/images/Geir_Ness.png';
-import logo from '../assets/images/symboltm-logo.png';
+// import logo from '../assets/images/symboltm-logo.png';
 
 // Projects with categories
 const projects = [
-  { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks },
+  { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa },
   { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort },
   { name: 'PlainsightAI', category: 'Technology', img: plainsightai },
@@ -69,129 +70,15 @@ const DefaultPage = () => {
   const handleNavigateToAbout = (anchor) => navigate(`/about#${anchor}`);
   const handleNavigateToWorkTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
+    // Navigate to the project's dedicated page
+    const handleProjectClick = (path) => {
+      navigate(path);
+    };
+
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow p-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="SymbolTM" className="h-12" />
-
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginLeft: '-120px' }}>
-            {/* Work Dropdown */}
-            <div className="relative">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-800"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setWorkDropdown(!workDropdown);
-                }}
-              >
-                Work
-              </a>
-              {workDropdown && (
-                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={handleNavigateToWorkTop}
-                  >
-                    Top of Page
-                  </a>
-                  <a href="#services" className="block px-4 py-2 hover:bg-gray-200">Services</a>
-                  <a href="#contact" className="block px-4 py-2 hover:bg-gray-200">Contact</a>
-                </div>
-              )}
-            </div>
-
-            {/* About Dropdown */}
-            <div className="relative">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-800"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setAboutDropdown(!aboutDropdown);
-                }}
-              >
-                About
-              </a>
-              {aboutDropdown && (
-                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToAbout('top')}
-                  >
-                    Top of Page
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToAbout('services')}
-                  >
-                    Services
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToAbout('contact')}
-                  >
-                    Contact
-                  </a>
-                </div>
-              )}
-            </div>
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600"
-            onClick={toggleMenu}
-          >
-            <svg className="fill-current h-6 w-6" viewBox="0 0 24 24">
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <nav className="md:hidden bg-gray p-4">
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={handleNavigateToWorkTop}
-            >
-              Work Top of Page
-            </a>
-            <a href="#services" className="block text-gray-600 hover:text-gray-800">Work Services</a>
-            <a href="#contact" className="block text-gray-600 hover:text-gray-800">Work Contact</a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToAbout('top')}
-            >
-              About Top of Page
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToAbout('services')}
-            >
-              About Services
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToAbout('contact')}
-            >
-              About Contact
-            </a>
-          </nav>
-        )}
-      </header>
+      <Header /> {/* Use the Header component here */}
 
       {/* Hello Content */}
       <section id="hello" className="bg-gray-100 py-12">
@@ -220,6 +107,18 @@ const DefaultPage = () => {
           ))}
         </select>
       </section>
+{/* 
+      <section className="container mx-auto p-6">
+        <select
+          value={selectedCategory}
+          onChange={handleCategoryChange}
+          className="px-4 py-2 rounded border border-gray-300"
+        >
+          {categories.map((category) => (
+            <option key={category} value={category}>{category}</option>
+          ))}
+        </select>
+      </section> */}
 
       {/* Work Showcase */}
       <section id="work" className="container mx-auto p-6">
@@ -236,7 +135,8 @@ const DefaultPage = () => {
             <div
               key={index}
               className="shadow-lg overflow-hidden"
-              style={{ width: '270px', height: '200px' }} // Consistent width and height
+              style={{ width: '270px', height: '200px', cursor: 'pointer' }} // Consistent width and height
+              onClick={() => handleProjectClick(project.path)} // Navigate on click
             >
               <img
                 src={project.img}

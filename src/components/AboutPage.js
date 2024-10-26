@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
-import logo from '../assets/images/symboltm-logo.png';
+// import logo from '../assets/images/symboltm-logo.png';
 
 const AboutPage = () => {
   const [workDropdown, setWorkDropdown] = useState(false); // Dropdown state for 'Work'
@@ -20,126 +21,7 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow p-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <img src={logo} alt="SymbolTM" className="h-12" />
-
-          {/* Desktop Menu */}
-          <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginLeft: '120px' }}>
-            {/* Work Dropdown */}
-            <div className="relative">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-800"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setWorkDropdown(!workDropdown);
-                }}
-              >
-                Work
-              </a>
-              {workDropdown && (
-                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToWork('top')}
-                  >
-                    Top of Page
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToWork('services')}
-                  >
-                    Services
-                  </a>
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={() => handleNavigateToWork('contact')}
-                  >
-                    Contact
-                  </a>
-                </div>
-              )}
-            </div>
-
-            {/* About Dropdown */}
-            <div className="relative">
-              <a
-                href="#"
-                className="text-gray-600 hover:text-gray-800"
-                onClick={(e) => {
-                  e.preventDefault();
-                  setAboutDropdown(!aboutDropdown);
-                }}
-              >
-                About
-              </a>
-              {aboutDropdown && (
-                <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                  <a
-                    href="#"
-                    className="block px-4 py-2 hover:bg-gray-200"
-                    onClick={handleNavigateToAboutTop}
-                  >
-                    Top of Page
-                  </a>
-                  <a href="#services" className="block px-4 py-2 hover:bg-gray-200">Services</a>
-                  <a href="#contact" className="block px-4 py-2 hover:bg-gray-200">Contact</a>
-                </div>
-              )}
-            </div>
-          </nav>
-
-          {/* Mobile Hamburger Menu */}
-          <button
-            className="md:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600"
-            onClick={toggleMenu}
-          >
-            <svg className="fill-current h-6 w-6" viewBox="0 0 24 24">
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <nav className="md:hidden bg-white p-4">
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToWork('top')}
-            >
-              Work Top of Page
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToWork('services')}
-            >
-              Work Services
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => handleNavigateToWork('contact')}
-            >
-              Work Contact
-            </a>
-            <a
-              href="#"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={handleNavigateToAboutTop}
-            >
-              About Top of Page
-            </a>
-            <a href="#services" className="block text-gray-600 hover:text-gray-800">About Services</a>
-            <a href="#contact" className="block text-gray-600 hover:text-gray-800">About Contact</a>
-          </nav>
-        )}
-      </header>
+      <Header /> {/* Use the Header component here */}
 
       {/* About Content */}
       <section id="About" className="bg-white-100 py-12">
