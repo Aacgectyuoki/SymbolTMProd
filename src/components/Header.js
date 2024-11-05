@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className="bg-white shadow p-6">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="mx-auto flex justify-between items-center">
         {/* Logo */}
         <img
           src={logo}
@@ -107,11 +107,13 @@ const Header = () => {
 
         {/* Hamburger Icon for Mobile */}
         <button
-          className="md:hidden flex items-center px-3 py-2 border rounded text-gray-600 border-gray-600"
+          className="md:hidden flex items-center px-3 py-2 rounded bg-black"
           onClick={toggleMenu}
         >
-          <svg className="fill-current h-6 w-6" viewBox="0 0 24 24">
-            <path d="M4 6h16M4 12h16M4 18h16" />
+          <svg className="h-6 w-6" viewBox="0 0 24 24">
+            <path d="M4 6h16" stroke="white" strokeWidth="2" />
+            <path d="M4 12h16" stroke="white" strokeWidth="2" />
+            <path d="M4 18h16" stroke="white" strokeWidth="2" />
           </svg>
         </button>
       </div>

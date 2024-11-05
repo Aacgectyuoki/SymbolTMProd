@@ -38,8 +38,8 @@ const NoCuffsPage = () => {
         {/* Learn More Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.nocuffs.com" className="text-blue-600 hover:underline">www.nocuffs.com</a></p>
-          <p><a href="https://www.youtube.com/channel/UCkAyB_BVynRBh_lPxLtnlXA" className="text-blue-600 hover:underline">YouTube Channel</a></p>
+          <p><a href="https://www.nocuffs.com" target="_blank" className="text-blue-600 hover:underline">www.nocuffs.com</a></p>
+          <p><a href="https://www.youtube.com/channel/UCkAyB_BVynRBh_lPxLtnlXA" target="_blank" className="text-blue-600 hover:underline">YouTube Channel</a></p>
           <p>ROLE: Michael Thibodeau - Creative Director and Lead Designer working with Kavinoky Law Firm and Leonard & Co.</p>
         </section>
 

@@ -35,8 +35,8 @@ const PlainsightAIPage = () => {
         {/* Learn More Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.plainsight.ai" className="text-blue-600 hover:underline">www.plainsight.ai</a></p>
-          <p><a href="https://plainsight.ai/blog" className="text-blue-600 hover:underline">https://plainsight.ai/blog-the-evolution</a></p>
+          <p><a href="https://www.plainsight.ai" target="_blank" className="text-blue-600 hover:underline">www.plainsight.ai</a></p>
+          <p><a href="https://plainsight.ai/blog" target="_blank" className="text-blue-600 hover:underline">https://plainsight.ai/blog-the-evolution</a></p>
           <p>ROLE: Michael Thibodeau - Creative Director and Hudson Cutler, NYC</p>
         </section>
 

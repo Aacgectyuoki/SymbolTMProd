@@ -42,9 +42,9 @@ const FisherPricePage = () => {
         {/* Learn More Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.fisher-price.com" className="text-blue-600 hover:underline">www.Fisher-Price.com</a></p>
-          <p><a href="https://vimeo.com/93183680" className="text-blue-600 hover:underline">Vimeo Link 1</a></p>
-          <p><a href="https://vimeo.com/93183557" className="text-blue-600 hover:underline">Vimeo Link 2</a></p>
+          <p><a href="https://www.fisher-price.com" target="_blank" className="text-blue-600 hover:underline">www.Fisher-Price.com</a></p>
+          <p><a href="https://vimeo.com/93183680" target="_blank" className="text-blue-600 hover:underline">Vimeo Link 1</a></p>
+          <p><a href="https://vimeo.com/93183557" target="_blank" className="text-blue-600 hover:underline">Vimeo Link 2</a></p>
           <p>ROLE: Michael Thibodeau - Creative Designer with Weber Shandwick and Fisher-Price</p>
         </section>
 

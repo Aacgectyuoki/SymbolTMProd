@@ -82,10 +82,10 @@ const DefaultPage = () => {
       <Header /> {/* Use the Header component here */}
 
       {/* Hello Content */}
-      <section id="hello" className="bg-gray-100 py-12">
-      <div className="container mx-auto text-gray-700">
-          {/* About Title - Extra Bold */}
-          <h3 className="text-2xl mb-6">
+      <section id="hello" className="bg-gray-100 p-6">
+      <div>
+          {/* Hello Title - Extra Bold */}
+          <h3 className="text-2xl font-avenir-bold mb-6">
             <span className="font-avenir-bold">Hello:</span>
             <span className="font-avenir-light"> We’re Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM</span>,
              a Phoenix based design and branding studio. 
@@ -97,16 +97,18 @@ const DefaultPage = () => {
       </section>
 
       {/* Category Selection */}
-      <section className="container mx-auto p-6">
-        <select
-          value={selectedCategory}
-          onChange={handleCategoryChange}
-          className="px-4 py-2 rounded border border-gray-300"
-        >
-          {categories.map((category) => (
-            <option key={category} value={category}>{category}</option>
-          ))}
-        </select>
+      <section className="bg-gray-100 p-6">
+        <div>
+          <select
+            value={selectedCategory}
+            onChange={handleCategoryChange}
+            className="px-4 py-2 rounded border border-gray-300"
+          >
+            {categories.map((category) => (
+              <option key={category} value={category}>{category}</option>
+            ))}
+          </select>
+        </div>
       </section>
 {/* 
       <section className="container mx-auto p-6">
@@ -122,7 +124,7 @@ const DefaultPage = () => {
       </section> */}
 
       {/* Work Showcase */}
-      <section id="work" className="container mx-auto p-6">
+      <section id="work" className="bg-gray-100 p-6">
         <h2 className="text-2xl font-avenir-bold mb-6">Our Work</h2>
         <div
           className="grid justify-center"
@@ -150,8 +152,8 @@ const DefaultPage = () => {
       </section>
 
       {/* Services Section */}
-    <section id="services" className="bg-gray-100 py-12">
-      <div className="container mx-auto text-gray-700">
+    <section id="services" className="bg-gray-100 p-6">
+      <div>
           {/* Services Title - Extra Bold */}
           <h3 className="text-2xl mb-6">
             <span className="font-avenir-bold">Services:</span>
@@ -175,8 +177,8 @@ const DefaultPage = () => {
 
 
       {/* Contact Section */}
-      <section id="contact" className="bg-gray py-8">
-        <div className="container mx-auto">
+      <section id="contact" className="bg-gray-100 p-6">
+        <div>
           <h2 className="text-2xl font-avenir-bold mb-6">Get in touch.</h2>
           <p className="inter-bold">Email: <span className="inter-light">Hi@SymbolTM.com</span></p>
           <p className="inter-bold">Mobile: <span className="inter-light">+1 480 717 0449</span></p>
