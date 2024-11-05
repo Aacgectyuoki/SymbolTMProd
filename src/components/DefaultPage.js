@@ -21,30 +21,31 @@ import turvo from '../assets/images/Turvo.png';
 import miiamo from '../assets/images/Mii_amo.png';
 import edx from '../assets/images/edX.png';
 import geirness from '../assets/images/Geir_Ness.png';
+// import path from 'path';
 // import logo from '../assets/images/symboltm-logo.png';
 
 // Projects with categories
 const projects = [
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
-  { name: 'Marfa', category: 'Hospitality', img: marfa },
-  { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort },
-  { name: 'PlainsightAI', category: 'Technology', img: plainsightai },
-  { name: 'KRC Research', category: 'Technology', img: krc },
-  { name: 'Yummy', category: 'Food & Drinks', img: yummy },
-  { name: 'UPS', category: 'Industry', img: ups },
-  { name: 'Ingenio', category: 'Technology', img: ingenio },
-  { name: 'Climate Victory Gardens', category: 'Food & Drinks', img: climatevictorygardens },
-  { name: 'Arizona Biltmore', category: 'Hospitality', img: arizonabiltmore },
-  { name: '1800NoCuffs', category: 'Industry', img: nocuffs },
-  { name: 'Marriott Hotels', category: 'Hospitality', img: marriott },
-  { name: 'Bob & Dolores Hope Foundation', category: 'Industry', img: bobanddolores },
-  { name: 'UpValley Inn & Hot Springs', category: 'Hospitality', img: upvalley },
-  { name: 'Fisher Price', category: 'Industry', img: fisherprice },
-  { name: 'The Tides Inn', category: 'Hospitality', img: thetidesinn },
-  { name: 'Turvo', category: 'Technology', img: turvo },
-  { name: 'Mii Amo', category: 'Hospitality', img: miiamo },
-  { name: 'EdX', category: 'Technology', img: edx },
-  { name: 'Geir Ness', category: 'Industry', img: geirness },
+  { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
+  { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
+  { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
+  { name: 'KRC Research', category: 'Technology', img: krc, path: '/projects/krc' },
+  { name: 'Yummy', category: 'Food & Drinks', img: yummy, path: '/projects/yummy'},
+  { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
+  { name: 'Ingenio', category: 'Technology', img: ingenio, path: '/projects/ingenio'},
+  { name: 'Climate Victory Gardens', category: 'Food & Drinks', img: climatevictorygardens, path: '/projects/climatevictorygardens'},
+  { name: 'Arizona Biltmore', category: 'Hospitality', img: arizonabiltmore, path: '/projects/arizonabiltmore'},
+  { name: '1800NoCuffs', category: 'Industry', img: nocuffs, path: '/projects/nocuffs'},
+  { name: 'Marriott Hotels', category: 'Hospitality', img: marriott, path: '/projects/marriott'},
+  { name: 'Bob & Dolores Hope Foundation', category: 'Industry', img: bobanddolores, path: '/projects/bobanddolores'},
+  { name: 'UpValley Inn & Hot Springs', category: 'Hospitality', img: upvalley, path: '/projects/upvalley'},
+  { name: 'Fisher Price', category: 'Industry', img: fisherprice, path: '/projects/fisherprice'},
+  { name: 'The Tides Inn', category: 'Hospitality', img: thetidesinn, path: '/projects/thetidesinn'},
+  { name: 'Turvo', category: 'Technology', img: turvo, path: '/projects/turvo'},
+  { name: 'Mii Amo', category: 'Hospitality', img: miiamo, path: '/projects/miiamo'},
+  { name: 'EdX', category: 'Technology', img: edx, path: '/projects/edx'},
+  { name: 'Geir Ness', category: 'Industry', img: geirness, path: '/projects/geirness'},
 ];
 
 // Category options
