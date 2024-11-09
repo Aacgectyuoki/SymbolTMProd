@@ -1,9 +1,9 @@
-name: Build and Deploy to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - 11-5-24  # Run the workflow when pushing to the 11-5-24 branch
+      - 11-5-24  # Trigger the workflow on pushes to 11-5-24
 
 jobs:
   build:
@@ -28,5 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  # Deploy to gh-pages branch
-          publish_dir: ./build
+          publish_branch: gh-pages  # Specify the branch to deploy to
+          publish_dir: ./build      # Ensure this points to your build directory
