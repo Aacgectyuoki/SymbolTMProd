@@ -1,9 +1,9 @@
-name: Build and Deploy on gh-pages
+name: Build and Deploy to GitHub Pages
 
 on:
   push:
     branches:
-      - gh-pages  # Trigger on gh-pages directly
+      - 11-5-24  # Run the workflow when pushing to the 11-5-24 branch
 
 jobs:
   build:
@@ -28,5 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  # Since we're on gh-pages, this is redundant but keeps the workflow intact
+          publish_branch: gh-pages  # Deploy to gh-pages branch
           publish_dir: ./build
