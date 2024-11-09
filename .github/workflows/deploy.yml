@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - 11-5-24  # Make sure this matches your actual branch name in GitHub
+      - 11-5-24  # Trigger the workflow on push to the 11-5-24 branch
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '18'  # Updated to match your local Node.js version
+          node-version: '18'  # Use the correct Node version
 
       - name: Install dependencies
         run: npm install
@@ -28,5 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  # Ensure this is the branch where GitHub Pages will deploy from
-          publish_dir: ./build  # This should point to your build output directory
+          publish_branch: gh-pages  # The branch to deploy to
+          publish_dir: ./build       # Ensure this points to your build directory
