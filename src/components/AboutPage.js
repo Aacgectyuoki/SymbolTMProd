@@ -1,22 +1,8 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import { useNavigate } from 'react-router-dom';
 // import logo from '../assets/images/symboltm-logo.png';
 
 const AboutPage = () => {
-  const [workDropdown, setWorkDropdown] = useState(false); // Dropdown state for 'Work'
-  const [aboutDropdown, setAboutDropdown] = useState(false); // Dropdown state for 'About'
-  const [isOpen, setIsOpen] = useState(false); // Hamburger menu state
-  const navigate = useNavigate(); // Initialize React Router's navigate function
-
-  // Toggle mobile menu visibility
-  const toggleMenu = () => setIsOpen((prev) => !prev);
-
-  // Navigate to Work Page with anchor
-  const handleNavigateToWork = (anchor) => navigate(`/#${anchor}`);
-
-  // Scroll to top of About page
-  const handleNavigateToAboutTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">

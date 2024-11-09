@@ -1,0 +1,18 @@
+// {
+//     "extends": "react-app",
+//     "rules": {
+//       "no-unused-vars": "off",                     // Turns off the rule for unused variables
+//       "jsx-a11y/anchor-is-valid": "off",            // Turns off the anchor validity rule for accessibility
+//       "react/jsx-no-target-blank": "warn"           // Changes target="_blank" rule to a warning instead of an error
+//     }
+//   }
+  
+{
+    "extends": "react-app",
+    "rules": {
+      "no-unused-vars": "off",
+      "jsx-a11y/anchor-is-valid": "off",
+      "react/jsx-no-target-blank": "off",
+      "jsx-a11y/img-redundant-alt": "off"
+    }
+  }
