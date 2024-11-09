@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - 11-5-24  # Trigger the workflow on pushes to 11-5-24
+      - 11-5-24  # Change this to your default branch
 
 jobs:
   build:
@@ -22,11 +22,10 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: CI=false npm run build
+        run: npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages  # Specify the branch to deploy to
-          publish_dir: ./build      # Ensure this points to your build directory
+          publish_dir: ./build
