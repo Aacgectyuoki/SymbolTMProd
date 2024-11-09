@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - 11-5-24  # Change this to your default branch if it's not 'main'
+      - 11-5-24  # Trigger the workflow on push to the 11-5-24 branch
 
 jobs:
   build:
@@ -28,4 +28,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages  # Specify the branch to deploy to
           publish_dir: ./build  # Change this to your build directory
