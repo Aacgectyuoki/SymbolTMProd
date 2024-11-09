@@ -39,9 +39,13 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-private-property-in-object": "^7.21.11",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.47",
-    "tailwindcss": "^3.4.13",
-    "@babel/plugin-transform-private-property-in-object": "^7.21.11"
+    "tailwindcss": "^3.4.13"
+  },
+  "babel": {
+    "plugins": ["@babel/plugin-proposal-private-property-in-object"]
   }
 }
