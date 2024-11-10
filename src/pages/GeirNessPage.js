@@ -35,17 +35,17 @@ const GeirNessPage = () => {
         {/* Image Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="Geir Ness Main Logo" className="w-full h-full object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/600x400" className="w-full h-full object-cover rounded-lg" />
           </div>
           <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="Geir Ness Website Image 1" className="w-full h-full object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/600x400" className="w-full h-full object-cover rounded-lg" />
           </div>
         </div>
 
         {/* Additional Images */}
         <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
           <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="Geir Ness Website Image 2" className="w-full h-full object-cover rounded-lg" />
+            <img src="https://via.placeholder.com/300x300" className="w-full h-full object-cover rounded-lg" />
           </div>
         </section>
       </section>
