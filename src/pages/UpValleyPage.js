@@ -37,7 +37,7 @@ const UpValleyPage = () => {
         {/* Learn More Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.upvalleyinn.com" target="_blank" className="text-blue-600 hover:underline">www.upvalleyinn.com</a></p>
+          <p><a href="https://www.upvalleyinn.com" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">www.upvalleyinn.com</a></p>
           <p>ROLE: Michael Thibodeau - Creative Director and Brand Designer, working with UpValley Inn & Hot Springs and Andrew Freeman & Co.</p>
         </section>
 

@@ -65,7 +65,7 @@ const MarfaPage = () => {
         {/* Learn More Section */}
         <section className="mt-12">
           <h2 className="text-xl font-bold mb-4">Learn More</h2>
-          <a href="https://www.VisitMarfa.org" target="_blank" className="text-blue-600 hover:underline">
+          <a href="https://www.VisitMarfa.org" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">
             www.VisitMarfa.org
           </a>
           <p>ROLE: Michael Thibodeau - Creative Director and Lead Designer</p>

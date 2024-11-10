@@ -33,7 +33,7 @@ const ArizonaBiltmorePage = () => {
         {/* Learn More Section */}
         <section className="mb-6">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.arizonabiltmore.com/special-offers/90years/" target="_blank" className="text-blue-600 hover:underline">www.arizonabiltmore.com/special-offers/90years/</a></p>
+          <p><a href="https://www.arizonabiltmore.com/special-offers/90years/" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">www.arizonabiltmore.com/special-offers/90years/</a></p>
           <p>ROLE: Michael Thibodeau - Graphic Designer</p>
         </section>
 
