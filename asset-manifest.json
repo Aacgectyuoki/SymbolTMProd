@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/SymbolTMProd/static/css/main.4f92786b.css",
+    "main.js": "/SymbolTMProd/static/js/main.c9e801e8.js",
+    "static/js/453.81c5d16c.chunk.js": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js",
+    "static/media/Arizona_Biltmore.png": "/SymbolTMProd/static/media/Arizona_Biltmore.7517f3968bf4d6cdf71b.png",
+    "static/media/UPS.png": "/SymbolTMProd/static/media/UPS.78f4350208897f8d7c6b.png",
+    "static/media/Climate_Victory_Gardens.png": "/SymbolTMProd/static/media/Climate_Victory_Gardens.894ac08263a7eb961f4c.png",
+    "static/media/The_Tides_Inn.png": "/SymbolTMProd/static/media/The_Tides_Inn.b8990030a78988ada39c.png",
+    "static/media/The_City_of_Marfa.png": "/SymbolTMProd/static/media/The_City_of_Marfa.e871069ce98b6545a696.png",
+    "static/media/Mii_amo.png": "/SymbolTMProd/static/media/Mii_amo.054855783d3cd1543f44.png",
+    "static/media/Enchantment_Resort.png": "/SymbolTMProd/static/media/Enchantment_Resort.ca0fb64b29a20561bf85.png",
+    "static/media/edX.png": "/SymbolTMProd/static/media/edX.af8df1311c3f1e19f8ce.png",
+    "static/media/Turvo.png": "/SymbolTMProd/static/media/Turvo.06c97769b3a5b627c1c8.png",
+    "static/media/UpValley.png": "/SymbolTMProd/static/media/UpValley.d747bc4557c4502a4ba3.png",
+    "static/media/WellzyPerks.png": "/SymbolTMProd/static/media/WellzyPerks.9e0c0865730ff2babc29.png",
+    "static/media/Yummy.png": "/SymbolTMProd/static/media/Yummy.2dea3b0a173b4c17165a.png",
+    "static/media/Ingenio.png": "/SymbolTMProd/static/media/Ingenio.bbdba89bc1f17daba4c4.png",
+    "static/media/Bob&Dolores.png": "/SymbolTMProd/static/media/Bob&Dolores.97673e21988846c8fea2.png",
+    "static/media/FisherPrice.png": "/SymbolTMProd/static/media/FisherPrice.0bafde7345ef5c7ccebf.png",
+    "static/media/Geir_Ness.png": "/SymbolTMProd/static/media/Geir_Ness.31c4448aff92a4e4a7a7.png",
+    "static/media/PlainsightAI.png": "/SymbolTMProd/static/media/PlainsightAI.034f336dedde8f520cea.png",
+    "static/media/1800NoCuffs.png": "/SymbolTMProd/static/media/1800NoCuffs.4c30dfad2862b26f30be.png",
+    "static/media/Marriott.png": "/SymbolTMProd/static/media/Marriott.de3a57be3403dc1064b6.png",
+    "static/media/avenir-next-bold.ttf": "/SymbolTMProd/static/media/avenir-next-bold.ae3b1e683a0c6a170a24.ttf",
+    "static/media/KRC_Research.png": "/SymbolTMProd/static/media/KRC_Research.600c878399b748db24fc.png",
+    "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.e5b47f814cd5c04b9418.png",
+    "index.html": "/SymbolTMProd/index.html",
+    "main.4f92786b.css.map": "/SymbolTMProd/static/css/main.4f92786b.css.map",
+    "main.c9e801e8.js.map": "/SymbolTMProd/static/js/main.c9e801e8.js.map",
+    "453.81c5d16c.chunk.js.map": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f92786b.css",
+    "static/js/main.c9e801e8.js"
+  ]
+}
