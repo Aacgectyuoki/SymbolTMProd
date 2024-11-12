@@ -27,7 +27,7 @@ const Header = () => {
           src={logo}
           alt="SymbolTM"
           className="h-12 cursor-pointer"
-          onClick={() => handleNavigate('/')}
+          onClick={() => handleNavigate('/#/')}
         />
 
         {/* Desktop Menu */}
@@ -46,21 +46,21 @@ const Header = () => {
                 <a
                   href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#top')}
+                  onClick={() => handleNavigate('/#/work#top')}
                 >
                   Top of Page
                 </a>
                 <a
-                  href="/#services"
+                  href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#services')}
+                  onClick={() => handleNavigate('/#/work#services')}
                 >
                   Services
                 </a>
                 <a
-                  href="/#contact"
+                  href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#contact')}
+                  onClick={() => handleNavigate('/#/work#contact')}
                 >
                   Contact
                 </a>
@@ -83,20 +83,23 @@ const Header = () => {
             {aboutDropdown && (
               <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
                 <a
-                  href="/about#top"
+                  href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={() => handleNavigate('/#/about#top')}
                 >
                   Top of Page
                 </a>
                 <a
-                  href="/about#services"
+                  href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={() => handleNavigate('/#/about#services')}
                 >
                   Services
                 </a>
                 <a
-                  href="/about#contact"
+                  href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={() => handleNavigate('/#/about#contact')}
                 >
                   Contact
                 </a>
