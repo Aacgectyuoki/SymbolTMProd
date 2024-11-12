@@ -83,7 +83,7 @@ const Header = () => {
             {aboutDropdown && (
               <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
                 <a
-                  href="#"
+                  href="#/about#top"
                   className="block px-4 py-2 hover:bg-gray-200"
                   onClick={() => handleNavigate('/#/about#top')}
                 >
