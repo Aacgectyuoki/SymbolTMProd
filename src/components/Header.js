@@ -27,7 +27,7 @@ const Header = () => {
           src={logo}
           alt="SymbolTM"
           className="h-12 cursor-pointer"
-          onClick={() => handleNavigate('/#')}
+          onClick={() => handleNavigate('/#/')}
         />
 
         {/* Desktop Menu */}
@@ -46,21 +46,21 @@ const Header = () => {
                 <a
                   href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#top')}
+                  onClick={() => handleNavigate('/#/work#top')}
                 >
                   Top of Page
                 </a>
                 <a
                   href="#/#services"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#services')}
+                  onClick={() => handleNavigate('#/#services')}
                 >
                   Services
                 </a>
                 <a
                   href="#/#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#contact')}
+                  onClick={() => handleNavigate('#/#contact')}
                 >
                   Contact
                 </a>
