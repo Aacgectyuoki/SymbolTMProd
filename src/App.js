@@ -1,5 +1,6 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DefaultPage from './components/DefaultPage'; // Adjust path based on folder structure
 import AboutPage from './components/AboutPage';
@@ -56,8 +57,17 @@ function App() {
     <Router>
       <ScrollToTop /> {/* Add ScrollToTop component here */}
       <Routes>
-        <Route path="/" element={<DefaultPage />} />
-        <Route path="/about" element={<AboutPage />} />
+      <nav>
+        {/* Home or Work page */}
+        <Link to="/">Home</Link>
+        <Link to="/#services">Services</Link>
+        <Link to="/#contact">Contact</Link>
+
+        {/* About page */}
+        <Link to="/about">About</Link>
+        <Link to="/about#services">About Services</Link>
+        <Link to="/about#contact">About Contact</Link>
+      </nav>
 
         {/* Map through projectRoutes array to generate project routes */}
         {projectRoutes.map((route, index) => (
