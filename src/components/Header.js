@@ -51,14 +51,14 @@ const Header = () => {
                   Top of Page
                 </a>
                 <a
-                  href="/#services"
+                  href="#/#services"
                   className="block px-4 py-2 hover:bg-gray-200"
                   onClick={() => handleNavigate('/#services')}
                 >
                   Services
                 </a>
                 <a
-                  href="/#contact"
+                  href="#/#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
                   onClick={() => handleNavigate('/#contact')}
                 >
@@ -71,7 +71,7 @@ const Header = () => {
           {/* About Dropdown */}
           <div className="relative">
             <a
-              href="#"
+              href="#/about"
               className="text-gray-600 hover:text-gray-800"
               onClick={(e) => {
                 e.preventDefault();
@@ -89,13 +89,13 @@ const Header = () => {
                   Top of Page
                 </a>
                 <a
-                  href="/about#services"
+                  href="#/about#services"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Services
                 </a>
                 <a
-                  href="/about#contact"
+                  href="#/about#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
                 >
                   Contact
