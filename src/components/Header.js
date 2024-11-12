@@ -125,21 +125,21 @@ const Header = () => {
           <div className="mb-4">
             <p className="font-bold text-gray-800">Work</p>
             <a
-              href="/#top"
+              href="/SymbolTMProd/#top"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Top of Page
             </a>
             <a
-              href="/#services"
+              href="/SymbolTMProd/#services"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Services
             </a>
             <a
-              href="/#contact"
+              href="/SymbolTMProd/#contact"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
@@ -151,21 +151,21 @@ const Header = () => {
           <div>
             <p className="font-bold text-gray-800">About</p>
             <a
-              href="/#about#top"
+              href="/SymbolTMProd/#about#top"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Top of Page
             </a>
             <a
-              href="/#about#services"
+              href="/SymbolTMProd/#about#services"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Services
             </a>
             <a
-              href="/#about#contact"
+              href="/SymbolTMProd/#about#contact"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
