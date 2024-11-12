@@ -27,7 +27,7 @@ const Header = () => {
           src={logo}
           alt="SymbolTM"
           className="h-12 cursor-pointer"
-          onClick={() => handleNavigate('/#/')}
+          onClick={() => handleNavigate('/#')}
         />
 
         {/* Desktop Menu */}
@@ -46,21 +46,21 @@ const Header = () => {
                 <a
                   href="#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/work#top')}
+                  onClick={() => handleNavigate('/#top')}
                 >
                   Top of Page
                 </a>
                 <a
-                  href="#"
+                  href="/#services"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/work#services')}
+                  onClick={() => handleNavigate('/#services')}
                 >
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="/#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/work#contact')}
+                  onClick={() => handleNavigate('/#contact')}
                 >
                   Contact
                 </a>
@@ -85,21 +85,18 @@ const Header = () => {
                 <a
                   href="#/about#top"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/about#top')}
                 >
                   Top of Page
                 </a>
                 <a
-                  href="#"
+                  href="/about#services"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/about#services')}
                 >
                   Services
                 </a>
                 <a
-                  href="#"
+                  href="/about#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/about#contact')}
                 >
                   Contact
                 </a>
