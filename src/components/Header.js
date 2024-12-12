@@ -149,7 +149,7 @@ const Header = () => {
 
           {/* About Section in Mobile */}
           <div>
-            <p className="font-bold text-gray-800">About</p>
+            <p className="font-bold text-gray-800">About</p>mk
             <a
               href="/SymbolTMProd/#about#top"
               className="block text-gray-600 hover:text-gray-800"

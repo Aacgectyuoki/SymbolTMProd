@@ -129,7 +129,7 @@ const DefaultPage = () => {
         <div
           className="grid justify-center"
           style={{
-            gridTemplateColumns: 'repeat(auto-fit, 270px)', // Fixed width of 300px for each image
+            gridTemplateColumns: 'repeat(auto-fit, 450px)', // Fixed width of 300px for each image
             gap: '0px', // No gap between images
             justifyItems: 'center',
           }}
@@ -138,7 +138,7 @@ const DefaultPage = () => {
             <div
               key={index}
               className="shadow-lg overflow-hidden"
-              style={{ width: '270px', height: '200px', cursor: 'pointer' }} // Consistent width and height
+              style={{ width: '450px', height: '330px', cursor: 'pointer' }} // Consistent width and height
               onClick={() => handleProjectClick(project.path)} // Navigate on click
             >
               <img
