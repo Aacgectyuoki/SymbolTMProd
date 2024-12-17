@@ -87,11 +87,14 @@ const DefaultPage = () => {
           {/* Hello Title - Extra Bold */}
           <h3 className="text-2xl font-avenir-bold mb-6">
             <span className="font-avenir-bold">Hello:</span>
-            <span className="font-avenir-light"> We’re Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM</span>,
-             a Phoenix based design and branding studio. 
-              We work with a range of organizations to define who they are and create compelling communications to help them achieve their ambitions. 
-              Underlying all our work is the love of our craft and the belief that design should have a positive impact on the world. 
-              View our showreel.</span>
+            <span className="font-avenir-light"> Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM </span>
+              is a branding agency designed to solve critical business issues. 
+             We grow value for clients through a considered approach to Brand Discovery, 
+             Brand Strategy, Brand Identity and Brand Management. 
+             With hundreds of project consultants (such as the new UPS logo, the MSN Butterfly, reorganized with Marriott International), 
+             we guide brand launches, strategic rebranding, naming, logos, identity systems and repositioning efforts across many diverse industries. 
+             SymbolTM is based in Phoenix and serves clients throughout the world. Are you managing a brand? Creating a start-up? Update your brand? 
+             <span className="font-avenir-bold"> Let’s talk!</span></span>
           </h3>
         </div>
       </section>
@@ -167,10 +170,14 @@ const DefaultPage = () => {
 
           {/* List of Services */}
           <ul className="list-decimal pl-6 space-y-4 text-2xl mb-6">
-            <li className="font-avenir-light">Analysis: <span className="font-avenir-light">Provide thorough research through analysis and develop winning solutions.</span></li>
-            <li className="font-avenir-light">Strategy: <span className="font-avenir-light">Orchestrate planning to implementation.</span></li>
-            <li className="font-avenir-light">Creativity: <span className="font-avenir-light">Provide logo options, icons, innovative design and ideation.</span></li>
-            <li className="font-avenir-light">Management: <span className="font-avenir-light">Develop comprehensive plan from conception to launch including:</span></li>
+            <li className="font-avenir-bold">Brand Discovery: <span className="font-avenir-light">What is at the core of the brand? What is it about a brand that resonates with its audience? Why is another brand underperforming? Discovery answers the brand’s core business questions. To effectively comprehend the heart of the brand, discovery reveals brand strengths and weaknesses and what customers value most in your offering and why. The intent is to gain meaningful insights within the competitive landscape, to better understand the consumers who make up the market, and what motivates category purchase.</span>
+              </li>
+            <li className="font-avenir-bold">Brand Strategy: <span className="font-avenir-light">Strategy aligns every aspect of the brand offering within a single actionable plan to define objectives and achieve goals. To effectively shape perception and articulate the brand’s position, the strategic plan navigates existing and potential competitive threats; maximizing strengths and opportunities. When successful, strategy connects the brand experience with the emotional needs of an engaged and loyal customer. This connection establishes brand preference, and in turn, builds brand equity.</span>
+              </li>
+            <li className="font-avenir-bold">Brand Identity: <span className="font-avenir-light">Brand identity is the outward representation of the brand as it is recognized in the market — specifically, the distinguishing verbal and visual elements and messages that appeal to the customer. From the brand name, to the logo, typography, tagline and tone, brand identity synthesizes the discernible components of the brand offering to present a recognizable image in the mind of the consumer. It presents the brand’s singular promise. Brand identity reinforces your position relative to the competition and articulates the intended brand message. And further, it defines the brand reputation for both: internal brand stewards and external target audiences.</span>
+              </li>
+            <li className="font-avenir-bold">Brand Management: <span className="font-avenir-light">Brand Management is the continued analysis and execution of all techniques utilized to maximize the value of the brand over time. Guided by the strategic objectives of the organization and informed by the perceived quality of the customer journey, the Brand Management process measures and adjusts strategies, resources and metrics. Brand Management entails sustained refinement as the brand and its customers evolve, as brand influence grows, and as competition enters (and exits) the market. And as required, Brand Management revisits all elements representing or supporting the brand experience in the service of increasing brand awareness and enhancing brand loyalty.</span>
+              </li>
           </ul>
       </div>
     </section>

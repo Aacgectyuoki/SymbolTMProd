@@ -31,7 +31,7 @@ const Header = () => {
         />
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center" style={{ gap: '5rem' }}>
+        <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginRight: '70px' }}>
           {/* Work Dropdown */}
           <div className="relative">
             <a
@@ -149,7 +149,7 @@ const Header = () => {
 
           {/* About Section in Mobile */}
           <div>
-            <p className="font-bold text-gray-800">About</p>mk
+            <p className="font-bold text-gray-800">About</p>
             <a
               href="/SymbolTMProd/#about#top"
               className="block text-gray-600 hover:text-gray-800"

@@ -19,18 +19,40 @@
   justify-content: center;
 }
 
+/* Header Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  padding-left: 0; /* Remove padding for exact alignment */
+  margin-left: 20px; /* Adjust spacing from the logo */
+  margin-right: 50px;
+}
+
 /* Navigation Links */
 nav a {
-  color: #333; /* Dark text color for better readability */
+  color: #333;
   font-weight: 400;
   font-size: 1.1rem;
-  margin-right: 15px;
+  margin-right: 15px; /* Space between links */
   text-decoration: none;
 }
 
-nav a:hover {
-  color: #007BFF; /* Light blue hover color for links */
+nav a:last-child {
+  margin-right: 50px; /* Add specific space from the right for the last link */
 }
+
+nav a:hover {
+  color: #007BFF; /* Blue hover effect */
+}
+
+/* Header Container */
+.header-container {
+  margin-right: auto; /* Removes any extra right alignment */
+  padding-right: 0;
+  margin-left: 0; /* Ensures links align left */
+}
+
 
 /* Section for showcasing projects */
 .showcase {
