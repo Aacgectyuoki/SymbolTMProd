@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import wellzyperks from '../assets/images/WellzyPerks.png';
 import marfa from '../assets/images/The_City_of_Marfa.png';
 import enchantmentresort from '../assets/images/Enchantment_Resort.png';
-import plainsightai from '../assets/images/PlainsightAI.png';
+import plainsightai from '../assets/images/PlainsightAI.gif';
 import yummy from '../assets/images/Yummy.png';
 import ingenio from '../assets/images/Ingenio.png';
 import marriott from '../assets/images/Marriott.png';
@@ -26,10 +26,10 @@ import geirness from '../assets/images/Geir_Ness.png';
 
 // Projects with categories
 const projects = [
+  { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
   { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
-  { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
   { name: 'KRC Research', category: 'Technology', img: krc, path: '/projects/krc' },
   { name: 'Yummy', category: 'Food & Drinks', img: yummy, path: '/projects/yummy'},
   { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
