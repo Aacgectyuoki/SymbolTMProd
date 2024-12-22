@@ -1,14 +1,19 @@
 {
   "files": {
-    "main.css": "/SymbolTMProd/static/css/main.4f92786b.css",
-    "main.js": "/SymbolTMProd/static/js/main.b7a87575.js",
+    "main.css": "/SymbolTMProd/static/css/main.ef364cde.css",
+    "main.js": "/SymbolTMProd/static/js/main.c30fc032.js",
     "static/js/453.81c5d16c.chunk.js": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js",
+    "static/media/PlainsightAI.gif": "/SymbolTMProd/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
+    "static/media/SymbolTM_Plainsight_09.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_09.59de573dde7133c37f67.png",
     "static/media/Arizona_Biltmore.png": "/SymbolTMProd/static/media/Arizona_Biltmore.7517f3968bf4d6cdf71b.png",
     "static/media/UPS.png": "/SymbolTMProd/static/media/UPS.78f4350208897f8d7c6b.png",
     "static/media/Climate_Victory_Gardens.png": "/SymbolTMProd/static/media/Climate_Victory_Gardens.894ac08263a7eb961f4c.png",
     "static/media/The_Tides_Inn.png": "/SymbolTMProd/static/media/The_Tides_Inn.b8990030a78988ada39c.png",
+    "static/media/SymbolTM_Plainsight_03.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_03.6462974002f3e22eeae1.png",
+    "static/media/SymbolTM_Plainsight_06.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_06.8a9a2c3ea35e3bf29b49.png",
     "static/media/The_City_of_Marfa.png": "/SymbolTMProd/static/media/The_City_of_Marfa.e871069ce98b6545a696.png",
     "static/media/Mii_amo.png": "/SymbolTMProd/static/media/Mii_amo.054855783d3cd1543f44.png",
+    "static/media/SymbolTM_Plainsight_02.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_02.a11b0767f8c18bb2f42c.png",
     "static/media/Enchantment_Resort.png": "/SymbolTMProd/static/media/Enchantment_Resort.ca0fb64b29a20561bf85.png",
     "static/media/edX.png": "/SymbolTMProd/static/media/edX.af8df1311c3f1e19f8ce.png",
     "static/media/Turvo.png": "/SymbolTMProd/static/media/Turvo.06c97769b3a5b627c1c8.png",
@@ -17,21 +22,24 @@
     "static/media/Yummy.png": "/SymbolTMProd/static/media/Yummy.2dea3b0a173b4c17165a.png",
     "static/media/Ingenio.png": "/SymbolTMProd/static/media/Ingenio.bbdba89bc1f17daba4c4.png",
     "static/media/Bob&Dolores.png": "/SymbolTMProd/static/media/Bob&Dolores.97673e21988846c8fea2.png",
+    "static/media/SymbolTM_Plainsight_08.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_08.9dd60fc29efda19d992c.png",
+    "static/media/SymbolTM_Plainsight_04.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_04.a398ecae971c494a9fdb.png",
     "static/media/FisherPrice.png": "/SymbolTMProd/static/media/FisherPrice.0bafde7345ef5c7ccebf.png",
+    "static/media/SymbolTM_Plainsight_07.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_07.b3c89eb32d874e3b0722.png",
     "static/media/Geir_Ness.png": "/SymbolTMProd/static/media/Geir_Ness.31c4448aff92a4e4a7a7.png",
-    "static/media/PlainsightAI.png": "/SymbolTMProd/static/media/PlainsightAI.034f336dedde8f520cea.png",
     "static/media/1800NoCuffs.png": "/SymbolTMProd/static/media/1800NoCuffs.4c30dfad2862b26f30be.png",
+    "static/media/SymbolTM_Plainsight_05.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_05.3dd68f4fe5607308732f.png",
     "static/media/Marriott.png": "/SymbolTMProd/static/media/Marriott.de3a57be3403dc1064b6.png",
     "static/media/avenir-next-bold.ttf": "/SymbolTMProd/static/media/avenir-next-bold.ae3b1e683a0c6a170a24.ttf",
     "static/media/KRC_Research.png": "/SymbolTMProd/static/media/KRC_Research.600c878399b748db24fc.png",
     "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/SymbolTMProd/index.html",
-    "main.4f92786b.css.map": "/SymbolTMProd/static/css/main.4f92786b.css.map",
-    "main.b7a87575.js.map": "/SymbolTMProd/static/js/main.b7a87575.js.map",
+    "main.ef364cde.css.map": "/SymbolTMProd/static/css/main.ef364cde.css.map",
+    "main.c30fc032.js.map": "/SymbolTMProd/static/js/main.c30fc032.js.map",
     "453.81c5d16c.chunk.js.map": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f92786b.css",
-    "static/js/main.b7a87575.js"
+    "static/css/main.ef364cde.css",
+    "static/js/main.c30fc032.js"
   ]
 }
