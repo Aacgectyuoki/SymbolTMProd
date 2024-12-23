@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/SymbolTMProd/static/css/main.ef364cde.css",
-    "main.js": "/SymbolTMProd/static/js/main.c30fc032.js",
+    "main.css": "/SymbolTMProd/static/css/main.726f32f8.css",
+    "main.js": "/SymbolTMProd/static/js/main.4f31acc6.js",
     "static/js/453.81c5d16c.chunk.js": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js",
     "static/media/PlainsightAI.gif": "/SymbolTMProd/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/SymbolTM_Plainsight_09.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_09.59de573dde7133c37f67.png",
@@ -21,6 +21,7 @@
     "static/media/WellzyPerks.png": "/SymbolTMProd/static/media/WellzyPerks.9e0c0865730ff2babc29.png",
     "static/media/Yummy.png": "/SymbolTMProd/static/media/Yummy.2dea3b0a173b4c17165a.png",
     "static/media/Ingenio.png": "/SymbolTMProd/static/media/Ingenio.bbdba89bc1f17daba4c4.png",
+    "static/media/Logos_industires.png": "/SymbolTMProd/static/media/Logos_industires.03c8f93fce2a96b04f06.png",
     "static/media/Bob&Dolores.png": "/SymbolTMProd/static/media/Bob&Dolores.97673e21988846c8fea2.png",
     "static/media/SymbolTM_Plainsight_08.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_08.9dd60fc29efda19d992c.png",
     "static/media/SymbolTM_Plainsight_04.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_04.a398ecae971c494a9fdb.png",
@@ -34,12 +35,12 @@
     "static/media/KRC_Research.png": "/SymbolTMProd/static/media/KRC_Research.600c878399b748db24fc.png",
     "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/SymbolTMProd/index.html",
-    "main.ef364cde.css.map": "/SymbolTMProd/static/css/main.ef364cde.css.map",
-    "main.c30fc032.js.map": "/SymbolTMProd/static/js/main.c30fc032.js.map",
+    "main.726f32f8.css.map": "/SymbolTMProd/static/css/main.726f32f8.css.map",
+    "main.4f31acc6.js.map": "/SymbolTMProd/static/js/main.4f31acc6.js.map",
     "453.81c5d16c.chunk.js.map": "/SymbolTMProd/static/js/453.81c5d16c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef364cde.css",
-    "static/js/main.c30fc032.js"
+    "static/css/main.726f32f8.css",
+    "static/js/main.4f31acc6.js"
   ]
 }
