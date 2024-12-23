@@ -57,7 +57,7 @@ function App() {
       <ScrollToTop /> {/* Add ScrollToTop component here */}
       <Routes>
         <Route path="/" element={<DefaultPage />} />
-        <Route path="/about" element={<AboutPage />} />
+        <Route path="/our-brand-story" element={<AboutPage />} />
 
         {/* Map through projectRoutes array to generate project routes */}
         {projectRoutes.map((route, index) => (

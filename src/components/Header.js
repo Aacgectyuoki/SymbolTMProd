@@ -1,22 +1,25 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../assets/images/symboltm-logo.png';
 
 const Header = () => {
-  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false); // Mobile menu state
   const [workDropdown, setWorkDropdown] = useState(false); // Work dropdown state
   const [aboutDropdown, setAboutDropdown] = useState(false); // About dropdown state
-  
+
   const toggleMenu = () => setIsOpen(!isOpen); // Toggle mobile menu
-  const toggleWorkDropdown = (e) => {
-    e.preventDefault();
+  const toggleWorkDropdown = () => {
     setWorkDropdown(!workDropdown); // Toggle work dropdown
+    setAboutDropdown(false); // Close the other dropdown
+  };
+  const toggleAboutDropdown = () => {
+    setAboutDropdown(!aboutDropdown); // Toggle about dropdown
+    setWorkDropdown(false); // Close the other dropdown
   };
 
-  const handleNavigate = (path) => {
-    navigate(path);
-    setIsOpen(false); // Close the mobile menu on navigation
+  const handleCloseDropdowns = () => {
+    setWorkDropdown(false);
+    setAboutDropdown(false);
   };
 
   return (
@@ -27,79 +30,83 @@ const Header = () => {
           src={logo}
           alt="SymbolTM"
           className="h-12 cursor-pointer"
-          onClick={() => handleNavigate('/#/')}
+          onClick={() => (window.location.href = '/#/')}
         />
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center" style={{ gap: '5rem', marginRight: '70px' }}>
           {/* Work Dropdown */}
           <div className="relative">
-            <a
-              href="#"
+            <button
               className="text-gray-600 hover:text-gray-800"
               onClick={toggleWorkDropdown}
             >
               Work
-            </a>
+            </button>
             {workDropdown && (
               <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                <a
-                  href="#"
+                <HashLink
+                  smooth
+                  to="/#"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('/#/work#top')}
+                  onClick={handleCloseDropdowns}
                 >
                   Top of Page
-                </a>
-                <a
-                  href="#/#services"
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/#work"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('#/#services')}
+                  onClick={handleCloseDropdowns}
+                >
+                  Work
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/#services"
+                  className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={handleCloseDropdowns}
                 >
                   Services
-                </a>
-                <a
-                  href="#/#contact"
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/#contact"
                   className="block px-4 py-2 hover:bg-gray-200"
-                  onClick={() => handleNavigate('#/#contact')}
+                  onClick={handleCloseDropdowns}
                 >
                   Contact
-                </a>
+                </HashLink>
               </div>
             )}
           </div>
 
           {/* About Dropdown */}
           <div className="relative">
-            <a
-              href="#/about"
+            <button
               className="text-gray-600 hover:text-gray-800"
-              onClick={(e) => {
-                e.preventDefault();
-                setAboutDropdown(!aboutDropdown);
-              }}
+              onClick={toggleAboutDropdown}
             >
-              About
-            </a>
+              Our Brand Story
+            </button>
             {aboutDropdown && (
               <div className="absolute bg-white shadow-lg rounded mt-2 w-40">
-                <a
-                  href="#/about#top"
+                <HashLink
+                  smooth
+                  to="/our-brand-story#top-of-page"
                   className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={handleCloseDropdowns}
                 >
                   Top of Page
-                </a>
-                <a
-                  href="#/about#services"
+                </HashLink>
+                <HashLink
+                  smooth
+                  to="/our-brand-story#past-experiences"
                   className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={handleCloseDropdowns}
                 >
-                  Services
-                </a>
-                <a
-                  href="#/about#contact"
-                  className="block px-4 py-2 hover:bg-gray-200"
-                >
-                  Contact
-                </a>
+                  Past Experiences
+                </HashLink>
               </div>
             )}
           </div>
@@ -124,53 +131,59 @@ const Header = () => {
           {/* Work Section in Mobile */}
           <div className="mb-4">
             <p className="font-bold text-gray-800">Work</p>
-            <a
-              href="/SymbolTMProd/#"
+            <HashLink
+              smooth
+              to="/#"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Top of Page
-            </a>
-            <a
-              href="/SymbolTMProd/#/#services"
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#work"
+              className="block text-gray-600 hover:text-gray-800"
+              onClick={() => setIsOpen(false)}
+            >
+              Work
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#services"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Services
-            </a>
-            <a
-              href="/SymbolTMProd/#/#contact"
+            </HashLink>
+            <HashLink
+              smooth
+              to="/#contact"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Contact
-            </a>
+            </HashLink>
           </div>
 
           {/* About Section in Mobile */}
           <div>
             <p className="font-bold text-gray-800">About</p>
-            <a
-              href="/SymbolTMProd/#about#top"
+            <HashLink
+              smooth
+              to="/our-brand-story#top-of-page"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Top of Page
-            </a>
-            <a
-              href="/SymbolTMProd/#about#services"
+            </HashLink>
+            <HashLink
+              smooth
+              to="/our-brand-story#past-experiences"
               className="block text-gray-600 hover:text-gray-800"
               onClick={() => setIsOpen(false)}
             >
-              Services
-            </a>
-            <a
-              href="/SymbolTMProd/#about#contact"
-              className="block text-gray-600 hover:text-gray-800"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </a>
+              Past Experiences
+            </HashLink>
           </div>
         </nav>
       )}

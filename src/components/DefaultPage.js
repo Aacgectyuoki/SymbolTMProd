@@ -82,7 +82,7 @@ const DefaultPage = () => {
       <Header /> {/* Use the Header component here */}
 
       {/* Hello Content */}
-      <section id="hello" className="bg-gray-100 p-6">
+      <section id="top-of-page" className="bg-gray-100 p-6">
       <div>
           {/* Hello Title - Extra Bold */}
           <h3 className="text-2xl font-avenir-bold mb-6">
