@@ -8,6 +8,7 @@ import ScrollToTop from './components/ScrollToTop';
 // Import all project pages
 import WellzyPerksPage from './pages/WellzyPerksPage';
 import MarfaPage from './pages/MarfaPage';
+import BiophiliaPage from './pages/BiophiliaPage';
 import EnchantmentResortPage from './pages/EnchantmentResortPage';
 import PlainsightAIPage from './pages/PlainsightAIPage';
 import KRCPage from './pages/KRCPage';
@@ -31,6 +32,7 @@ import GeirNessPage from './pages/GeirNessPage';
 const projectRoutes = [
   { path: '/projects/wellzyperks', element: <WellzyPerksPage /> },
   { path: '/projects/marfa', element: <MarfaPage /> },
+  { path: '/projects/biophilia', element: <BiophiliaPage /> },
   { path: '/projects/enchantmentresort', element: <EnchantmentResortPage /> },
   { path: '/projects/plainsightai', element: <PlainsightAIPage /> },
   { path: '/projects/krc', element: <KRCPage /> },

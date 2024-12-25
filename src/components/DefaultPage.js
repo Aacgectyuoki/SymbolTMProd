@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 import wellzyperks from '../assets/images/WellzyPerks.png';
-import marfa from '../assets/images/The_City_of_Marfa.png';
+import marfa from '../assets/images/The_City_of_Marfa.gif';
+import biophilia from '../assets/images/Biophilia_Herbals.gif';
 import enchantmentresort from '../assets/images/Enchantment_Resort.png';
 import plainsightai from '../assets/images/PlainsightAI.gif';
 import yummy from '../assets/images/Yummy.png';
@@ -27,6 +28,7 @@ import geirness from '../assets/images/Geir_Ness.png';
 // Projects with categories
 const projects = [
   { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
+  { name: 'Biophilia', category: 'Hospitality', img: biophilia, path: '/projects/biophilia' },
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
   { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
