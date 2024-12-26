@@ -30,7 +30,8 @@ const Header = () => {
           src={logo}
           alt="SymbolTM"
           className="h-12 cursor-pointer"
-          onClick={() => (window.location.href = '/#/')}
+          // onClick={() => (window.location.href = '/#')} // dev mode
+          onClick={() => (window.location.href = '/SymbolTMProd/#')} // prod mode
         />
 
         {/* Desktop Menu */}
