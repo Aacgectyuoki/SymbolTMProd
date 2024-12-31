@@ -54,14 +54,24 @@ const PlainsightAIPage = () => {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Solutions</h2>
           <p className="text-gray-700">
-            We quickly developed domain name options, created a new brand positioning, and selected the new name.
+            We quickly developed domain name options, created a new brand positioning,
+            and selected the new name. Based on the name, we created an emblem symbol,
+            "Semore the Elephant," and a bold, simple name. The design system provided
+            new colors and textures, icons, and even the new website layout. It felt
+            that the company could now strengthen the brand, change the name, and
+            deliver desirable customer experiences.
           </p>
         </div>
 
         <blockquote className="italic bg-gray-100 p-6 shadow-lg mb-8">
           <p>
-            “Now as <span className="font-bold">Plainsight</span>, we have established ourselves as a power player
-            delivering production-ready vision AI solutions.”
+            “Now as <span className="font-bold">Plainsight</span>, we have
+            established ourselves as a power player delivering production-ready
+            vision AI solutions. Industry leaders have recognized{' '}
+            <span className="font-bold">Plainsight</span> for solving problems where
+            others have failed, and for helping customers see and activate the
+            potential of their data through smart, simple, and effective use of
+            vision AI.”
           </p>
           <p className="text-right mt-4">- Carlos Anchía, CEO of Plainsight</p>
         </blockquote>
@@ -99,7 +109,7 @@ const PlainsightAIPage = () => {
         </div> */}
 
         <div className="mb-8">
-          <h2 className="text-2xl font-bold mb-4">Design System</h2>
+          {/* <h2 className="text-2xl font-bold mb-4">Design System</h2> */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
            <img src={plainsight02} alt="Plainsight Branding" className="shadow-lg" />
            <img src={plainsight03} alt="Logo Variants" className="shadow-lg" />
