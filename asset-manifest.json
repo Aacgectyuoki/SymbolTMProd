@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SymbolTMProd/static/css/main.56fb400b.css",
-    "main.js": "/SymbolTMProd/static/js/main.145f9bfd.js",
+    "main.js": "/SymbolTMProd/static/js/main.ef33ebdf.js",
     "static/js/453.60505c6c.chunk.js": "/SymbolTMProd/static/js/453.60505c6c.chunk.js",
     "static/media/PlainsightAI.gif": "/SymbolTMProd/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/SymbolTMProd/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
@@ -56,11 +56,11 @@
     "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/SymbolTMProd/index.html",
     "main.56fb400b.css.map": "/SymbolTMProd/static/css/main.56fb400b.css.map",
-    "main.145f9bfd.js.map": "/SymbolTMProd/static/js/main.145f9bfd.js.map",
+    "main.ef33ebdf.js.map": "/SymbolTMProd/static/js/main.ef33ebdf.js.map",
     "453.60505c6c.chunk.js.map": "/SymbolTMProd/static/js/453.60505c6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56fb400b.css",
-    "static/js/main.145f9bfd.js"
+    "static/js/main.ef33ebdf.js"
   ]
 }
