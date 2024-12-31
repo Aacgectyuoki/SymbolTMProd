@@ -95,7 +95,7 @@ const DefaultPage = () => {
              Brand Strategy, Brand Identity and Brand Management. 
              With hundreds of project consultants (such as the new UPS logo, the MSN Butterfly, reorganized with Marriott International), 
              we guide brand launches, strategic rebranding, naming, logos, identity systems and repositioning efforts across many diverse industries. 
-             SymbolTM is based in Phoenix and serves clients throughout the world. Are you managing a brand? Creating a start-up? Update your brand? 
+             Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM </span> is based in Phoenix and serves clients throughout the world. Are you managing a brand? Creating a start-up? Update your brand? 
              <span className="font-avenir-bold"> Let’s talk!</span></span>
           </h3>
         </div>

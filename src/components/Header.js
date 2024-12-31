@@ -108,6 +108,14 @@ const Header = () => {
                 >
                   Past Experiences
                 </HashLink>
+                <HashLink
+                  smooth
+                  to="/our-brand-story#contact"
+                  className="block px-4 py-2 hover:bg-gray-200"
+                  onClick={handleCloseDropdowns}
+                >
+                  Contact
+                </HashLink>
               </div>
             )}
           </div>
@@ -184,6 +192,14 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
             >
               Past Experiences
+            </HashLink>
+            <HashLink
+              smooth
+              to="/our-brand-story#contact"
+              className="block text-gray-600 hover:text-gray-800"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact
             </HashLink>
           </div>
         </nav>
