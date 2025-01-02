@@ -1,0 +1,62 @@
+/* Import custom fonts (uncomment when needed) */
+/* @import './assets/fonts/fonts.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font Declarations */
+
+/* Regular (normal weight) */
+.font-avenir-regular {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 400;
+}
+
+/* Light (300 weight) */
+.font-avenir-light {
+  font-family: 'Avenir', sans-serif;
+  font-weight: 300;
+  color: #000000;
+}
+
+/* Bold (700 weight) */
+@font-face {
+  font-family: 'AvenirNextBold';
+  src: url('./assets/fonts/avenir-next-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-avenir-bold {
+  font-family: 'AvenirNextBold', sans-serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Typography Overrides */
+h1, h2, h3, h4, h5, h6 {
+  /* @apply font-bold; */ /* Uncomment to use Tailwind's font-bold utility */
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Custom Utilities */
+.bg-light {
+  background-color: gray; /* Consider renaming this class to .bg-gray-100 to match Tailwind conventions */
+}
+
+.text-dark {
+  color: #000000; /* Use Tailwind's text-black instead for consistency */
+}

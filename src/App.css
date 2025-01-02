@@ -1,0 +1,113 @@
+/* General app structure */
+.App {
+  text-align: left; /* Left-aligned for a modern, clean look */
+}
+
+/* Logo Styling */
+.App-logo {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+/* Header Section */
+.App-header {
+  background-color: gray; /* Light background */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Header Navigation */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align to the left */
+  padding-left: 0; /* Remove padding for exact alignment */
+  margin-left: 20px; /* Adjust spacing from the logo */
+  margin-right: 50px;
+}
+
+/* Navigation Links */
+nav a {
+  color: #333;
+  font-weight: 400;
+  font-size: 1.1rem;
+  margin-right: 15px; /* Space between links */
+  text-decoration: none;
+}
+
+nav a:last-child {
+  margin-right: 50px; /* Add specific space from the right for the last link */
+}
+
+nav a:hover {
+  color: #007BFF; /* Blue hover effect */
+}
+
+/* Header Container */
+.header-container {
+  margin-right: auto; /* Removes any extra right alignment */
+  padding-right: 0;
+  margin-left: 0; /* Ensures links align left */
+}
+
+
+/* Section for showcasing projects */
+.showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+}
+
+.showcase-item {
+  background-color: gray;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.showcase-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.showcase-item h3 {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 20px;
+  background-color: gray;
+  text-align: left;
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+/* Keyframe Animation (Remove this if not needed) */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
