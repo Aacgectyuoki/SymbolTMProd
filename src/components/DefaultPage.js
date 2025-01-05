@@ -10,7 +10,7 @@ import yummy from '../assets/images/Yummy.png';
 import ingenio from '../assets/images/Ingenio.png';
 import marriott from '../assets/images/Marriott.png';
 import ups from '../assets/images/UPS.png';
-import krc from '../assets/images/KRC_Research.png';
+import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import climatevictorygardens from '../assets/images/Climate_Victory_Gardens.png';
 import arizonabiltmore from '../assets/images/Arizona_Biltmore.png';
 import nocuffs from '../assets/images/1800NoCuffs.png';
@@ -23,7 +23,7 @@ import miiamo from '../assets/images/Mii_amo.png';
 import edx from '../assets/images/edX.png';
 import geirness from '../assets/images/Geir_Ness.png';
 
-import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
+// import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 // import path from 'path';
 // import logo from '../assets/images/symboltm-logo.png';
 
