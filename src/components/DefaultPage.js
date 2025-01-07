@@ -19,6 +19,7 @@ import bobanddolores from '../assets/images/Bob&Dolores.png';
 import upvalley from '../assets/images/UpValley.png';
 import fisherprice from '../assets/images/FisherPrice.png';
 import thetidesinn from '../assets/images/The_Tides_Inn.png';
+import thecove from '../assets/images/SymbolTM_TheCove_PRIMARY_IMAGE.png';
 import turvo from '../assets/images/Turvo.png';
 import miiamo from '../assets/images/Mii_amo.png';
 import edx from '../assets/images/Symboltm_edX__PRIMARY_IMAGE.gif';
@@ -49,6 +50,7 @@ const projects = [
   { name: 'UpValley Inn & Hot Springs', category: 'Hospitality', img: upvalley, path: '/projects/upvalley'},
   { name: 'Fisher Price', category: 'Industry', img: fisherprice, path: '/projects/fisherprice'},
   { name: 'The Tides Inn', category: 'Hospitality', img: thetidesinn, path: '/projects/thetidesinn'},
+  { name: 'The Cove', category: 'Hospitality', img: thecove, path: '/projects/thecove'},
   { name: 'Turvo', category: 'Technology', img: turvo, path: '/projects/turvo'},
   { name: 'Mii Amo', category: 'Hospitality', img: miiamo, path: '/projects/miiamo'},
   { name: 'EdX', category: 'Technology', img: edx, path: '/projects/edx'},

@@ -24,6 +24,7 @@ import BobAndDoloresPage from './pages/Bob&DoloresPage';
 import UpValleyPage from './pages/UpValleyPage';
 import FisherPricePage from './pages/FisherPricePage';
 import TheTidesInnPage from './pages/TheTidesInnPage';
+import TheCovePage from './pages/TheCovePage';
 import TurvoPage from './pages/TurvoPage';
 import MiiAmoPage from './pages/MiiAmoPage';
 import EdXPage from './pages/edXPage';
@@ -50,6 +51,7 @@ const projectRoutes = [
   { path: '/projects/upvalley', element: <UpValleyPage /> },
   { path: '/projects/fisherprice', element: <FisherPricePage /> },
   { path: '/projects/thetidesinn', element: <TheTidesInnPage /> },
+  { path: '/projects/thecove', element: <TheCovePage /> },
   { path: '/projects/turvo', element: <TurvoPage /> },
   { path: '/projects/miiamo', element: <MiiAmoPage /> },
   { path: '/projects/edx', element: <EdXPage /> },
