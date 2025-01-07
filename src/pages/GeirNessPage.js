@@ -1,54 +1,101 @@
 import React from 'react';
 import Header from '../components/Header';
+import geirness from '../assets/images/Symboltm_Geirness_PRIMARY_IMAGE.jpg';
+import geirness01 from '../assets/images/Symboltm_Geirness_01.jpg';
+import geirness02 from '../assets/images/Symboltm_Geirness_02.jpg';
+import geirness03 from '../assets/images/Symboltm_Geirness_03.jpg';
+import geirness04 from '../assets/images/Symboltm_Geirness_04.jpg';
+import geirness05 from '../assets/images/Symboltm_Geirness_05.jpg';
+import geirness06 from '../assets/images/Symboltm_Geirness_06.jpg';
+import geirness07 from '../assets/images/Symboltm_Geirness_07.jpg';
+import geirness08 from '../assets/images/Symboltm_Geirness_08.jpg';
 
 const GeirNessPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header /> {/* Shared header component */}
+      <Header /> {/* Reuse shared Header */}
 
-      <section className="container mx-auto p-6">
-        {/* Title and Client Information */}
-        <h1 className="text-3xl font-bold mb-4">Geir Ness: Pure Norway Fragrances</h1>
-        <p className="text-lg mb-2"><strong>BRAND:</strong> Geir Ness</p>
-        <p className="text-lg mb-6"><strong>CLIENT:</strong> Laila Inc.</p>
+      {/* Main Hero Section with GIF */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <h1 className="text-4xl font-bold mb-2">Mii Amo</h1>
+        <div className="h-2"></div>
+        {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
+        <img
+          src={geirness}
+          alt="Geir ess Branding"
+          className="w-full shadow-lg"
+        />
+      </section>
 
-        {/* Background Section */}
-        <h2 className="text-2xl font-semibold mb-2">Background</h2>
-        <p className="mb-4">
-          As it turned out, Laila was just the beginning. Today, Laila is one of Nordstrom's best-selling specialty fragrances 
-          and the flagship product in a complete line of fragrance and body products, including Geir for Men, Skin of Norway, 
-          and Frozen in a Bottle, a fragrance created in partnership with Disney, inspired by the Norwegian nature featured in 
-          Disney’s "Frozen."
-        </p>
+      {/* Content Section */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Background</h2>
+          <p className="text-gray-700">
+          Mii amo is a luxury spa collection within Enchantment Group. It is considered one of the top 10 throughout the country.
+          </p>
+        </div>
 
-        {/* Action Section */}
-        <h2 className="text-2xl font-semibold mb-2">Action</h2>
-        <p className="mb-4">
-          Review the website, blogs, and sales. Research other luxury perfume brands. Provide a better digital system, 
-          simplifying communications and strengthening relationships. Use Shopify as a supporting solution. Update the Geir Ness 
-          logo and clean up all sub-brand logos.
-        </p>
-        <p className="mb-4">
-          The website launch has shown more than 30% more sales since the past.
-        </p>
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Action</h2>
+          <p className="text-gray-700">
+          For more than 4 years, I have worked together for Mii amo.
+          </p>
+        </div>
 
-        {/* Image Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" className="w-full h-full object-cover rounded-lg" />
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Deliverables</h2>
+          <p className="text-gray-700">
+          Online advertising and customer communications.
+          </p>
+        </div>
+
+        {/* Image Gallery */}
+        <div className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src={geirness01} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness02} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness03} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness04} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness05} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness06} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness07} alt="Geir ness Branding" className="shadow-lg" />
+            <img src={geirness08} alt="Geir ness Branding" className="shadow-lg" />
           </div>
         </div>
 
-        {/* Additional Images */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" className="w-full h-full object-cover rounded-lg" />
-          </div>
-        </section>
+        {/* Learn More Section */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold mb-2">Learn More</h2>
+          <a
+            href="https://www.miiamo.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            www.miiamo.com
+          </a>
+          <br></br>
+          ROLE: Branding, Design, and Strategy
+        </div>
+
+        <br></br>
+        <div>
+              <h2 className="text-2xl font-avenir-bold mb-6">Get in touch.</h2>
+              <p className="inter-bold">Email: <span className="inter-light">Hi@SymbolTM.com</span></p>
+              <p className="inter-bold">Mobile: <span className="inter-light">+1 480 717 0449</span></p>
+              <p className="inter-bold">Office: <span className="inter-light">7202 North 15th Pl., Phoenix, AZ 85020</span></p>
+        </div>
+        <br></br>
       </section>
+
+      <br></br>
     </div>
   );
 };
