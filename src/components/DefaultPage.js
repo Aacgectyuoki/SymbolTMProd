@@ -6,7 +6,7 @@ import marfa from '../assets/images/The_City_of_Marfa.gif';
 import biophilia from '../assets/images/Biophilia_Herbals.gif';
 import enchantmentresort from '../assets/images/Enchantment_Resort.png';
 import plainsightai from '../assets/images/PlainsightAI.gif';
-import ingenio from '../assets/images/Ingenio.png';
+import ingenio from '../assets/images/SymbolTM_IngenioRx_PRIMARY_IMAGE.jpg';
 import marriott from '../assets/images/Marriott.png';
 import ups from '../assets/images/UPS.png';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
