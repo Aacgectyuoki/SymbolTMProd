@@ -12,7 +12,7 @@ import BiophiliaPage from './pages/BiophiliaPage';
 import EnchantmentResortPage from './pages/EnchantmentResortPage';
 import PlainsightAIPage from './pages/PlainsightAIPage';
 import KRCPage from './pages/KRCPage';
-import YummyPage from './pages/YummyPage';
+import UmamiPage from './pages/UmamiPage';
 import UPSPage from './pages/UPSPage';
 import IngenioPage from './pages/IngenioPage';
 import ClimateVictoryGardensPage from './pages/ClimateVictoryGardensPage';
@@ -39,7 +39,7 @@ const projectRoutes = [
   { path: '/projects/enchantmentresort', element: <EnchantmentResortPage /> },
   { path: '/projects/plainsightai', element: <PlainsightAIPage /> },
   { path: '/projects/krc', element: <KRCPage /> },
-  { path: '/projects/yummy', element: <YummyPage /> },
+  { path: '/projects/umami', element: <UmamiPage /> },
   { path: '/projects/ups', element: <UPSPage /> },
   { path: '/projects/ingenio', element: <IngenioPage /> },
   { path: '/projects/climatevictorygardens', element: <ClimateVictoryGardensPage /> },
