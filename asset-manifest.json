@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SymbolTMProd/static/css/main.56fb400b.css",
-    "main.js": "/SymbolTMProd/static/js/main.4246bc5c.js",
+    "main.js": "/SymbolTMProd/static/js/main.b790c062.js",
     "static/js/453.60505c6c.chunk.js": "/SymbolTMProd/static/js/453.60505c6c.chunk.js",
     "static/media/PlainsightAI.gif": "/SymbolTMProd/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/SymbolTMProd/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
@@ -14,15 +14,19 @@
     "static/media/SymbolTM_TheGlenrothes_Truffles_04.png": "/SymbolTMProd/static/media/SymbolTM_TheGlenrothes_Truffles_04.b5d867535f3fe719f273.png",
     "static/media/Symboltm_edX__PRIMARY_IMAGE.gif": "/SymbolTMProd/static/media/Symboltm_edX__PRIMARY_IMAGE.71661f84460969bcfba6.gif",
     "static/media/SymbolTM_Marfa_04.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_04.75e5b1e2463aa1e63cbc.png",
+    "static/media/SymbolTM_TheCove_PRIMARY_IMAGE.png": "/SymbolTMProd/static/media/SymbolTM_TheCove_PRIMARY_IMAGE.eab9cc0c43ab3655842e.png",
     "static/media/SymbolTM_Marfa_08.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_08.e20d47ae635f7453c66a.png",
+    "static/media/SymbolTM_TheCove_04.png": "/SymbolTMProd/static/media/SymbolTM_TheCove_04.1f26252cdfd481b02672.png",
     "static/media/SymbolTM_Marfa_02.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_02.924e59bc07f913e722fe.png",
     "static/media/SymbolTM_Marfa_03.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_03.7cd30c68ec4df29908c4.png",
+    "static/media/SymbolTM_TheCove_03.png": "/SymbolTMProd/static/media/SymbolTM_TheCove_03.ee5b4379a602e831137b.png",
     "static/media/SymbolTM_TheGlenrothes_Truffles_01.png": "/SymbolTMProd/static/media/SymbolTM_TheGlenrothes_Truffles_01.4c62fa5a4c6a1c4f43e9.png",
     "static/media/SymbolTM_Marfa_07.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_07.f03fe10dba5ed34f9617.png",
     "static/media/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.png": "/SymbolTMProd/static/media/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.a7d0b652796587e5199e.png",
     "static/media/SymbolTM_Plainsight_09.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_09.59de573dde7133c37f67.png",
     "static/media/SymbolTM_Biophilia_03.png": "/SymbolTMProd/static/media/SymbolTM_Biophilia_03.93d38c018ff01565e7d7.png",
     "static/media/SymbolTM_TheGlenrothes_Truffles_03.png": "/SymbolTMProd/static/media/SymbolTM_TheGlenrothes_Truffles_03.5511aa3a180efe31300a.png",
+    "static/media/SymbolTM_TheCove_02.png": "/SymbolTMProd/static/media/SymbolTM_TheCove_02.3dd5c41477664acf65ec.png",
     "static/media/Symboltm_KRC_02.jpg": "/SymbolTMProd/static/media/Symboltm_KRC_02.82aa52a663604f41c9fc.jpg",
     "static/media/Symboltm_HarvardX_06.jpg": "/SymbolTMProd/static/media/Symboltm_HarvardX_06.f42dc6d9f96050c39388.jpg",
     "static/media/SymbolTM_Biophilia_05.png": "/SymbolTMProd/static/media/SymbolTM_Biophilia_05.2a1b52453a500d0320fe.png",
@@ -74,6 +78,7 @@
     "static/media/Symboltm_KRC_07.jpg": "/SymbolTMProd/static/media/Symboltm_KRC_07.fdfbd5323c2557c16d6b.jpg",
     "static/media/SymbolTM_WellzyPerks_06.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_06.a2474721179c689f6396.jpg",
     "static/media/SymbolTM_Plainsight_04.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_04.a398ecae971c494a9fdb.png",
+    "static/media/SymbolTM_TheCove_01.jpg": "/SymbolTMProd/static/media/SymbolTM_TheCove_01.bb98a7f9ff992a4522c7.jpg",
     "static/media/Symboltm_HarvardX_01.jpg": "/SymbolTMProd/static/media/Symboltm_HarvardX_01.21a24b80d6b59215f532.jpg",
     "static/media/SymbolTM_WellzyPerks_08.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_08.24fa2565959530a655c4.jpg",
     "static/media/Symboltm_edX_04.jpg": "/SymbolTMProd/static/media/Symboltm_edX_04.86f2f44b668cc6688078.jpg",
@@ -108,11 +113,11 @@
     "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/SymbolTMProd/index.html",
     "main.56fb400b.css.map": "/SymbolTMProd/static/css/main.56fb400b.css.map",
-    "main.4246bc5c.js.map": "/SymbolTMProd/static/js/main.4246bc5c.js.map",
+    "main.b790c062.js.map": "/SymbolTMProd/static/js/main.b790c062.js.map",
     "453.60505c6c.chunk.js.map": "/SymbolTMProd/static/js/453.60505c6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56fb400b.css",
-    "static/js/main.4246bc5c.js"
+    "static/js/main.b790c062.js"
   ]
 }
