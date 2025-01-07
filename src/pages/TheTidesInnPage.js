@@ -1,68 +1,103 @@
 import React from 'react';
 import Header from '../components/Header';
+import thetidesinn from '../assets/images/SymbolTM_TheTidesInn_PRIMARY_IMAGE.png';
+import thetidesinn01 from '../assets/images/SymbolTM_TheTidesInn_01.png';
+import thetidesinn02 from '../assets/images/SymbolTM_TheTidesInn_02.png';
+import thetidesinn03 from '../assets/images/SymbolTM_TheTidesInn_03.png';
+import thetidesinn04 from '../assets/images/SymbolTM_TheTidesInn_04.png';
+import thetidesinn05 from '../assets/images/SymbolTM_TheTidesInn_05.png';
+import thetidesinn06 from '../assets/images/SymbolTM_TheTidesInn_06.png';
+import thetidesinn07 from '../assets/images/SymbolTM_TheTidesInn_07.png';
+import thetidesinn08 from '../assets/images/SymbolTM_TheTidesInn_08.png';
 
 const TheTidesInnPage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header /> {/* Shared header component */}
+      <Header /> {/* Reuse shared Header */}
 
-      <section className="container mx-auto p-6">
-        {/* Title and Client Information */}
-        <h1 className="text-3xl font-bold mb-4">The Tides Inn</h1>
-        <p className="text-lg mb-2">BRAND: The Tides Inn, Irvington, VA</p>
-        <p className="text-lg mb-6">CLIENT: Enchantment Group</p>
+      {/* Main Hero Section with GIF */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <h1 className="text-4xl font-bold mb-2">The Tides Inn</h1>
+        <div className="h-2"></div>
+        {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
+        <img
+          src={thetidesinn}
+          alt="The Tides Inn Branding"
+          className="w-full shadow-lg"
+        />
+      </section>
 
-        {/* Background Section */}
-        <h2 className="text-2xl font-semibold mb-2">Background</h2>
-        <p className="mb-4">
-          The Tides Inn is a luxury collection within Enchantment Group, known for its unique, historical location on the coastline of the Chesapeake.
-        </p>
+      {/* Content Section */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Background</h2>
+          <p className="text-gray-700">
+          The Tides Inn is a luxury collection within Enchantment Group.
+          </p>
+        </div>
 
-        {/* Action Section */}
-        <h2 className="text-2xl font-semibold mb-2">Action</h2>
-        <p className="mb-4">
-          Over the past 4 years, I have supported both online and print production communications for The Tides Inn, creating materials for customer communications and promotional campaigns.
-        </p>
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Action</h2>
+          <p className="text-gray-700">
+          For more than 4 years, I have worked together for The Tides Inn resort. 
+          I have supported online and print production communications. 
+          The Tides Inn is a unique, historical resort at the coastline center of the Chesapeake.
+          </p>
+        </div>
 
-        {/* Deliverables Section */}
-        <h2 className="text-2xl font-semibold mb-2">Deliverables</h2>
-        <ul className="list-disc pl-6 space-y-2 mb-6">
-          <li>Advertising (print and online)</li>
-          <li>Customer Communications</li>
-          <li>Online Services</li>
-          <li>Online Videos</li>
-        </ul>
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Deliverables</h2>
+          <p className="text-gray-700">
+          Advertising, both printed and online, customer communications, online services and online videos.
+          </p>
+        </div>
 
-        {/* Learn More Section */}
-        <section className="mb-6">
-          <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.tidesinn.com" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">www.tidesinn.com</a></p>
-          <p>ROLE: Michael Thibodeau - Creative Director and Brand Designer</p>
-        </section>
-
-        {/* Image Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="The Tides Inn Boat Logo" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="The Tides Inn Website Mockup" className="w-full h-full object-cover rounded-lg" />
+        {/* Image Gallery */}
+        <div className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src={thetidesinn01} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn02} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn03} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn04} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn05} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn06} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn07} alt="The Tides Inn Branding" className="shadow-lg" />
+            <img src={thetidesinn08} alt="The Tides Inn Branding" className="shadow-lg" />
           </div>
         </div>
 
-        {/* Additional Images */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="The Tides Inn Chesapeake Ad" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="The Tides Inn Chart Your Path Ad" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="The Tides Inn Daily Tide Newsletter" className="w-full h-full object-cover rounded-lg" />
-          </div>
-        </section>
+        {/* Learn More Section */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold mb-2">Learn More</h2>
+          <a
+            href="https://www.tidesinn.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            www.tidesinn.com
+          </a>
+          <br></br>
+          ROLE: Branding, Design, and Strategy
+        </div>
+
+        <br></br>
+        <div>
+              <h2 className="text-2xl font-avenir-bold mb-6">Get in touch.</h2>
+              <p className="inter-bold">Email: <span className="inter-light">Hi@SymbolTM.com</span></p>
+              <p className="inter-bold">Mobile: <span className="inter-light">+1 480 717 0449</span></p>
+              <p className="inter-bold">Office: <span className="inter-light">7202 North 15th Pl., Phoenix, AZ 85020</span></p>
+        </div>
+        <br></br>
       </section>
+
+      <br></br>
     </div>
   );
 };
