@@ -16,7 +16,7 @@ const TheCovePage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
-        <h1 className="text-4xl font-bold mb-2">The Glenrothes</h1>
+        <h1 className="text-4xl font-bold mb-2">The Cove</h1>
         <div className="h-2"></div>
         {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
         <img
