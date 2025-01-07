@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import thecove from '../assets/images/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.png';
+import thecove from '../assets/images/SymbolTM_TheCove_PRIMARY_IMAGE.png';
 import thecove01 from '../assets/images/SymbolTM_TheCove_01.jpg';
 import thecove02 from '../assets/images/SymbolTM_TheCove_02.png';
 import thecove03 from '../assets/images/SymbolTM_TheCove_03.png';
