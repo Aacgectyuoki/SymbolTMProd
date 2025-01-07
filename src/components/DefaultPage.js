@@ -13,6 +13,7 @@ import ups from '../assets/images/UPS.png';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import climatevictorygardens from '../assets/images/Climate_Victory_Gardens.png';
 import arizonabiltmore from '../assets/images/Arizona_Biltmore.png';
+import theglenrothes from '../assets/images/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.png';
 import nocuffs from '../assets/images/1800NoCuffs.png';
 import bobanddolores from '../assets/images/Bob&Dolores.png';
 import upvalley from '../assets/images/UpValley.png';
@@ -20,7 +21,8 @@ import fisherprice from '../assets/images/FisherPrice.png';
 import thetidesinn from '../assets/images/The_Tides_Inn.png';
 import turvo from '../assets/images/Turvo.png';
 import miiamo from '../assets/images/Mii_amo.png';
-import edx from '../assets/images/edX.png';
+import edx from '../assets/images/Symboltm_edX__PRIMARY_IMAGE.gif';
+import harvardx from '../assets/images/Symboltm_HarvardX_PRIMARY_IMAGE.jpg';
 import geirness from '../assets/images/Geir_Ness.png';
 
 // import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
@@ -40,6 +42,7 @@ const projects = [
   { name: 'Ingenio', category: 'Technology', img: ingenio, path: '/projects/ingenio'},
   { name: 'Climate Victory Gardens', category: 'Food & Drinks', img: climatevictorygardens, path: '/projects/climatevictorygardens'},
   { name: 'Arizona Biltmore', category: 'Hospitality', img: arizonabiltmore, path: '/projects/arizonabiltmore'},
+  { name: 'The Glenrothes', category: 'Food & Drinks', img: theglenrothes, path: '/projects/theglenrothes'},
   { name: '1800NoCuffs', category: 'Industry', img: nocuffs, path: '/projects/nocuffs'},
   { name: 'Marriott Hotels', category: 'Hospitality', img: marriott, path: '/projects/marriott'},
   { name: 'Bob & Dolores Hope Foundation', category: 'Industry', img: bobanddolores, path: '/projects/bobanddolores'},
@@ -49,6 +52,7 @@ const projects = [
   { name: 'Turvo', category: 'Technology', img: turvo, path: '/projects/turvo'},
   { name: 'Mii Amo', category: 'Hospitality', img: miiamo, path: '/projects/miiamo'},
   { name: 'EdX', category: 'Technology', img: edx, path: '/projects/edx'},
+  { name: 'HarvardX', category: 'Technology', img: harvardx, path: '/projects/harvardx'},
   { name: 'Geir Ness', category: 'Industry', img: geirness, path: '/projects/geirness'},
 ];
 

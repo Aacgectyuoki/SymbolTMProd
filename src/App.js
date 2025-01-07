@@ -17,6 +17,7 @@ import UPSPage from './pages/UPSPage';
 import IngenioPage from './pages/IngenioPage';
 import ClimateVictoryGardensPage from './pages/ClimateVictoryGardensPage';
 import ArizonaBiltmorePage from './pages/ArizonaBiltmorePage';
+import TheGlenrothesPage from './pages/TheGlenrothesPage';
 import NoCuffsPage from './pages/NoCuffsPage';
 import MarriottPage from './pages/MarriottPage';
 import BobAndDoloresPage from './pages/Bob&DoloresPage';
@@ -26,6 +27,7 @@ import TheTidesInnPage from './pages/TheTidesInnPage';
 import TurvoPage from './pages/TurvoPage';
 import MiiAmoPage from './pages/MiiAmoPage';
 import EdXPage from './pages/edXPage';
+import HarvardXPage from './pages/HarvardXPage';
 import GeirNessPage from './pages/GeirNessPage';
 
 // Define project routes in an array
@@ -41,6 +43,7 @@ const projectRoutes = [
   { path: '/projects/ingenio', element: <IngenioPage /> },
   { path: '/projects/climatevictorygardens', element: <ClimateVictoryGardensPage /> },
   { path: '/projects/arizonabiltmore', element: <ArizonaBiltmorePage /> },
+  { path: '/projects/theglenrothes', element: <TheGlenrothesPage /> },
   { path: '/projects/nocuffs', element: <NoCuffsPage /> },
   { path: '/projects/marriott', element: <MarriottPage /> },
   { path: '/projects/bobanddolores', element: <BobAndDoloresPage /> },
@@ -50,6 +53,7 @@ const projectRoutes = [
   { path: '/projects/turvo', element: <TurvoPage /> },
   { path: '/projects/miiamo', element: <MiiAmoPage /> },
   { path: '/projects/edx', element: <EdXPage /> },
+  { path: '/projects/harvardx', element: <HarvardXPage /> },
   { path: '/projects/geirness', element: <GeirNessPage /> },
 ];
 
