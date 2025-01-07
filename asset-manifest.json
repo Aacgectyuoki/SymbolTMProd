@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SymbolTMProd/static/css/main.56fb400b.css",
-    "main.js": "/SymbolTMProd/static/js/main.b790c062.js",
+    "main.js": "/SymbolTMProd/static/js/main.1007a569.js",
     "static/js/453.60505c6c.chunk.js": "/SymbolTMProd/static/js/453.60505c6c.chunk.js",
     "static/media/PlainsightAI.gif": "/SymbolTMProd/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/SymbolTMProd/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
@@ -78,6 +78,7 @@
     "static/media/Symboltm_KRC_07.jpg": "/SymbolTMProd/static/media/Symboltm_KRC_07.fdfbd5323c2557c16d6b.jpg",
     "static/media/SymbolTM_WellzyPerks_06.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_06.a2474721179c689f6396.jpg",
     "static/media/SymbolTM_Plainsight_04.png": "/SymbolTMProd/static/media/SymbolTM_Plainsight_04.a398ecae971c494a9fdb.png",
+    "static/media/SymbolTM_Turvo_01.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_01.7af6bf3eeb7a604ad594.jpg",
     "static/media/SymbolTM_TheCove_01.jpg": "/SymbolTMProd/static/media/SymbolTM_TheCove_01.bb98a7f9ff992a4522c7.jpg",
     "static/media/Symboltm_HarvardX_01.jpg": "/SymbolTMProd/static/media/Symboltm_HarvardX_01.21a24b80d6b59215f532.jpg",
     "static/media/SymbolTM_WellzyPerks_08.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_08.24fa2565959530a655c4.jpg",
@@ -92,11 +93,17 @@
     "static/media/Symboltm_edX_02.jpg": "/SymbolTMProd/static/media/Symboltm_edX_02.b78a81e7d45140f16cd8.jpg",
     "static/media/SymbolTM_WellzyPerks_04.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_04.044d954fc164a8e549a9.jpg",
     "static/media/SymbolTM_WellzyPerks_07.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_07.b50395aa2c09eecc323f.jpg",
+    "static/media/SymbolTM_Turvo_06.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_06.998ba664f28d129b6847.jpg",
     "static/media/SymbolTM_WellzyPerks_09.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_09.5bb1033349a9743d1915.jpg",
+    "static/media/SymbolTM_Turvo_PRIMARY_IMAGE.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_PRIMARY_IMAGE.7edecc0dbe8b851d0276.jpg",
+    "static/media/SymbolTM_Turvo_05.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_05.d6dc928d773ff14ab892.jpg",
     "static/media/Symboltm_KRC_03.jpg": "/SymbolTMProd/static/media/Symboltm_KRC_03.b30bd71d579538d1b654.jpg",
     "static/media/Symboltm_KRC_PRIMARY_IMAGE.jpg": "/SymbolTMProd/static/media/Symboltm_KRC_PRIMARY_IMAGE.02bedca05827ddf636b1.jpg",
+    "static/media/SymbolTM_Turvo_04.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_04.85e1d8f543c8b4f8d782.jpg",
     "static/media/SymbolTM_WellzyPerks_05.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_05.84f3feb26aba36efb2e7.jpg",
     "static/media/SymbolTM_Marfa_06.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_06.2bdeb1285be495d1c9b9.png",
+    "static/media/SymbolTM_Turvo_07.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_07.3f2db05f0bed462fc56e.jpg",
+    "static/media/SymbolTM_Turvo_08.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_08.cef5e2b4feabf4f8e1d4.jpg",
     "static/media/SymbolTM_WellzyPerks_10.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_10.1fbbc0d184edb66a368b.jpg",
     "static/media/Symboltm_HarvardX_02.jpg": "/SymbolTMProd/static/media/Symboltm_HarvardX_02.4d2cd143c0eec9eee4fe.jpg",
     "static/media/Symboltm_HarvardX_03.jpg": "/SymbolTMProd/static/media/Symboltm_HarvardX_03.d25bc458797934212703.jpg",
@@ -107,17 +114,19 @@
     "static/media/SymbolTM_WellzyPerks_01.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_01.84b38f3148bdebfb494b.jpg",
     "static/media/Marriott.png": "/SymbolTMProd/static/media/Marriott.de3a57be3403dc1064b6.png",
     "static/media/SymbolTM_WellzyPerks_12.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_12.7bc8542686e2b9711627.jpg",
+    "static/media/SymbolTM_Turvo_02.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_02.d29ee82d0a1adc1fe2a5.jpg",
+    "static/media/SymbolTM_Turvo_03.jpg": "/SymbolTMProd/static/media/SymbolTM_Turvo_03.072a04315c1b5b1ed6f4.jpg",
     "static/media/SymbolTM_Marfa_05.png": "/SymbolTMProd/static/media/SymbolTM_Marfa_05.b7e8e47d27291181e13d.png",
     "static/media/avenir-next-bold.ttf": "/SymbolTMProd/static/media/avenir-next-bold.ae3b1e683a0c6a170a24.ttf",
     "static/media/SymbolTM_WellzyPerks_02.jpg": "/SymbolTMProd/static/media/SymbolTM_WellzyPerks_02.66b5dad56cdaef9e289f.jpg",
     "static/media/symboltm-logo.png": "/SymbolTMProd/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/SymbolTMProd/index.html",
     "main.56fb400b.css.map": "/SymbolTMProd/static/css/main.56fb400b.css.map",
-    "main.b790c062.js.map": "/SymbolTMProd/static/js/main.b790c062.js.map",
+    "main.1007a569.js.map": "/SymbolTMProd/static/js/main.1007a569.js.map",
     "453.60505c6c.chunk.js.map": "/SymbolTMProd/static/js/453.60505c6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.56fb400b.css",
-    "static/js/main.b790c062.js"
+    "static/js/main.1007a569.js"
   ]
 }
