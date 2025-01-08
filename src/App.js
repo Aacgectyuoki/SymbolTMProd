@@ -16,6 +16,7 @@ import UmamiPage from './pages/UmamiPage';
 import UPSPage from './pages/UPSPage';
 import IngenioPage from './pages/IngenioPage';
 import ClimateVictoryGardensPage from './pages/ClimateVictoryGardensPage';
+import GSMAPage from './pages/GSMAPage';
 import ArizonaBiltmorePage from './pages/ArizonaBiltmorePage';
 import TheGlenrothesPage from './pages/TheGlenrothesPage';
 import NoCuffsPage from './pages/NoCuffsPage';
@@ -43,6 +44,7 @@ const projectRoutes = [
   { path: '/projects/ups', element: <UPSPage /> },
   { path: '/projects/ingenio', element: <IngenioPage /> },
   { path: '/projects/climatevictorygardens', element: <ClimateVictoryGardensPage /> },
+  { path: '/projects/gsma', element: <GSMAPage /> },
   { path: '/projects/arizonabiltmore', element: <ArizonaBiltmorePage /> },
   { path: '/projects/theglenrothes', element: <TheGlenrothesPage /> },
   { path: '/projects/nocuffs', element: <NoCuffsPage /> },

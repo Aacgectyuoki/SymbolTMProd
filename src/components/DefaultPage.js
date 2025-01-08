@@ -12,6 +12,7 @@ import ups from '../assets/images/UPS.png';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import umami from '../assets/images/Umami_Image_PRIMARY_IMAGE.jpg';
 import climatevictorygardens from '../assets/images/SymbolTM_CVG_PRIMARY_IMAGE.jpg';
+import gsma from '../assets/images/Symboltm_GSMA_PRIMARY_IMAGE.jpg';
 import arizonabiltmore from '../assets/images/SymbolTM_AB_Image_PRIMARY_IMAGE.jpg';
 import theglenrothes from '../assets/images/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.png';
 import nocuffs from '../assets/images/SymbolTM_NoCuffs_Image_PRIMARY_IMAGE.jpg';
@@ -42,6 +43,7 @@ const projects = [
   { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
   { name: 'Ingenio', category: 'Technology', img: ingenio, path: '/projects/ingenio'},
   { name: 'Climate Victory Gardens', category: 'Food & Drinks', img: climatevictorygardens, path: '/projects/climatevictorygardens'},
+  { name: 'GSMA', category: 'Technology', img: gsma, path: '/projects/gsma'},
   { name: 'Arizona Biltmore', category: 'Hospitality', img: arizonabiltmore, path: '/projects/arizonabiltmore'},
   { name: 'The Glenrothes', category: 'Food & Drinks', img: theglenrothes, path: '/projects/theglenrothes'},
   { name: '1800NoCuffs', category: 'Industry', img: nocuffs, path: '/projects/nocuffs'},
