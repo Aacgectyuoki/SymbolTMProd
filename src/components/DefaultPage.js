@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
+// import wellzyperks from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 import wellzyperks from '../assets/images/WellzyPerks.png';
 import marfa from '../assets/images/The_City_of_Marfa.gif';
 import biophilia from '../assets/images/Biophilia_Herbals.gif';
-import enchantmentresort from '../assets/images/Enchantment_Resort.png';
+// import enchantmentresort from '../assets/images/Enchantment_Resort.png';
 import plainsightai from '../assets/images/PlainsightAI.gif';
 import ingenio from '../assets/images/SymbolTM_IngenioRx_PRIMARY_IMAGE.jpg';
 import marriott from '../assets/images/Symboltm_Marriott_PRIMARY_IMAGE.jpg';
-import ups from '../assets/images/UPS.png';
+// import ups from '../assets/images/UPS.png';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import umami from '../assets/images/Umami_Image_PRIMARY_IMAGE.jpg';
 import climatevictorygardens from '../assets/images/SymbolTM_CVG_PRIMARY_IMAGE.jpg';
@@ -17,15 +18,15 @@ import arizonabiltmore from '../assets/images/SymbolTM_AB_Image_PRIMARY_IMAGE.jp
 import theglenrothes from '../assets/images/SymbolTM_TheGlenrothes_Truffles_PRIMARY_IMAGE.png';
 import nocuffs from '../assets/images/SymbolTM_NoCuffs_Image_PRIMARY_IMAGE.jpg';
 import bobanddolores from '../assets/images/Symboltm_BobHope_PRIMARY_IMAGE.jpg';
-import upvalley from '../assets/images/UpValley.png';
-import fisherprice from '../assets/images/FisherPrice.png';
+import upvalley from '../assets/images/SymbolTM_UpValleyInn_PRIMARY_IMAGE.jpg';
+import fisherprice from '../assets/images/Symboltm_Fisher_Price_PRIMARY_IMAGE.jpg';
 import thetidesinn from '../assets/images/SymbolTM_TheTidesInn_PRIMARY_IMAGE.png';
 import thecove from '../assets/images/SymbolTM_TheCove_PRIMARY_IMAGE.png';
-import turvo from '../assets/images/Turvo.png';
+import turvo from '../assets/images/SymbolTM_Turvo_PRIMARY_IMAGE.jpg';
 import miiamo from '../assets/images/SymbolTM_MiiAmo_PRIMARY_IMAGE.png';
 import edx from '../assets/images/Symboltm_edX__PRIMARY_IMAGE.gif';
 import harvardx from '../assets/images/Symboltm_HarvardX_PRIMARY_IMAGE.jpg';
-import geirness from '../assets/images/Geir_Ness.png';
+import geirness from '../assets/images/Symboltm_Geirness_PRIMARY_IMAGE.jpg';
 
 // import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 // import path from 'path';
@@ -37,10 +38,10 @@ const projects = [
   { name: 'Biophilia', category: 'Hospitality', img: biophilia, path: '/projects/biophilia' },
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
-  { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
+  // { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
   { name: 'KRC Research', category: 'Technology', img: krc, path: '/projects/krc' },
   { name: 'Umami', category: 'Food & Drinks', img: umami, path: '/projects/umami'},
-  { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
+  // { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
   { name: 'Ingenio', category: 'Technology', img: ingenio, path: '/projects/ingenio'},
   { name: 'Climate Victory Gardens', category: 'Food & Drinks', img: climatevictorygardens, path: '/projects/climatevictorygardens'},
   { name: 'GSMA', category: 'Technology', img: gsma, path: '/projects/gsma'},

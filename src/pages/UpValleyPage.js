@@ -1,71 +1,118 @@
 import React from 'react';
 import Header from '../components/Header';
+import upvalley from '../assets/images/SymbolTM_UpValleyInn_PRIMARY_IMAGE.jpg';
+import upvalley01 from '../assets/images/SymbolTM_UpValleyInn_01.jpg';
+import upvalley02 from '../assets/images/SymbolTM_UpValleyInn_02.jpg';
+import upvalley03 from '../assets/images/SymbolTM_UpValleyInn_03.jpg';
+import upvalley04 from '../assets/images/SymbolTM_UpValleyInn_04.jpg';
+import upvalley05 from '../assets/images/SymbolTM_UpValleyInn_05.jpg';
+import upvalley06 from '../assets/images/SymbolTM_UpValleyInn_06.jpg';
+import upvalley07 from '../assets/images/SymbolTM_UpValleyInn_07.jpg';
+import upvalley08 from '../assets/images/SymbolTM_UpValleyInn_08.jpg';
+import upvalley09 from '../assets/images/SymbolTM_UpValleyInn_09.jpg';
+import upvalley10 from '../assets/images/SymbolTM_UpValleyInn_10.jpg';
 
-const UpValleyPage = () => {
+const FisherPricePage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header /> {/* Shared header component */}
+      <Header /> {/* Reuse shared Header */}
 
-      <section className="container mx-auto p-6">
-        {/* Title and Client Information */}
-        <h1 className="text-3xl font-bold mb-4">UpValley Inn & Hot Springs</h1>
-        <p className="text-lg mb-2">BRAND: UpValley Inn & Hot Springs</p>
-        <p className="text-lg mb-6">CLIENT: UpValley Inn & Hot Springs</p>
+      {/* Main Hero Section with GIF */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <h1 className="text-4xl font-bold mb-2">UpValley Inn & Hot Springs</h1>
+        <div className="h-2"></div>
+        {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
+        <img
+          src={upvalley}
+          alt="UpValley Inn & Hot Springs Branding"
+          className="w-full shadow-lg"
+        />
+      </section>
 
-        {/* Background Section */}
-        <h2 className="text-2xl font-semibold mb-2">Background</h2>
-        <p className="mb-4">
-          The hotel owner aimed to reposition the Calistoga property from a Comfort Inn to a higher-end boutique hotel. The brand transformation was necessary to elevate guest and employee experiences, especially as Napa hotels were gaining market share.
-        </p>
+      {/* Content Section */}
+      <section
+        className="mx-auto px-6 mt-8 w-11/12"
+        style={{ maxWidth: '1400px' }}
+      >
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Background</h2>
+          <p className="text-gray-700">
+          Hotel owner wanted to reposition the Calistoga property from a Comfort Inn to a higher-end boutique hotel. 
+          Realizing that Napa hotels were growing share and he was beginnning a renovation, 
+          the inn needed a brand transformation to elevate every guest and employee experience.
+          </p>
+        </div>
 
-        {/* Action Section */}
-        <h2 className="text-2xl font-semibold mb-2">Action</h2>
-        <p className="mb-4">
-          A new name and brand identity were developed to create a memorable and unique experience with a modern vibe. The brand project covered all touchpoints with bold colors, textures, and unique messaging to attract the target audience.
-        </p>
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Action</h2>
+          <p className="text-gray-700">
+          The new brand yearned for a unique name, one that was simple, memorable and interesting. 
+          The hotel was debuting a mid-century modern vibe, using bold colors and textures. 
+          Messages and images would tout tongue-in-cheek marketing communications. The project included all touchpoints. 
+          </p>
+        </div>
 
-        {/* Deliverables Section */}
-        <h2 className="text-2xl font-semibold mb-2">Deliverables</h2>
-        <ul className="list-disc pl-6 space-y-2 mb-6">
-          <li>Brand Strategy</li>
-          <li>Logo, Design, Digital</li>
-          <li>Signage, Stationery</li>
-          <li>Brand Guidelines</li>
-          <li>Marketing Communications</li>
-        </ul>
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Deliverables</h2>
+          <p className="text-gray-700">
+          Brand Strategy, Logo, Design, Digital, Signage, Stationery, Brand Guidelines & Marketing Communications 
+          </p>
+        </div>
 
-        {/* Learn More Section */}
-        <section className="mb-6">
-          <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <p><a href="https://www.upvalleyinn.com" target="_blank" rel="noreferrer" className="text-blue-600 hover:underline">www.upvalleyinn.com</a></p>
-          <p>ROLE: Michael Thibodeau - Creative Director and Brand Designer, working with UpValley Inn & Hot Springs and Andrew Freeman & Co.</p>
-        </section>
+        {/* <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Result</h2>
+          <p className="text-gray-700">
+          Fisher-Price drove 8% growth in 2016.
+          </p>
+        </div> */}
 
-        {/* Image Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="UpValley Inn - Exterior and Interior Images" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-64 flex items-center justify-center">
-            <img src="https://via.placeholder.com/600x400" alt="UpValley Inn - Guest Experience" className="w-full h-full object-cover rounded-lg" />
+        {/* Image Gallery */}
+        <div className="mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <img src={upvalley01} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley02} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley03} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley04} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley05} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley06} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley07} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley08} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley09} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
+            <img src={upvalley10} alt="UpValley Inn & Hot Springs Branding" className="shadow-lg" />
           </div>
         </div>
 
-        {/* Additional Images */}
-        <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="UpValley Inn Brand Transformation" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="UpValley Inn Brand Guidelines" className="w-full h-full object-cover rounded-lg" />
-          </div>
-          <div className="bg-gray-300 h-48 flex items-center justify-center">
-            <img src="https://via.placeholder.com/300x300" alt="UpValley Inn Marketing Materials" className="w-full h-full object-cover rounded-lg" />
-          </div>
-        </section>
+        {/* Learn More Section */}
+        <div className="mb-8">
+          <h2 className="text-xl font-bold mb-2">Learn More</h2>
+          <a
+            href="https://www.upvalleyinn.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            www.upvalleyinn.com
+          </a>
+          <br></br>
+          ROLE: Branding, Design, and Strategy
+        </div>
+
+        <br></br>
+        <div>
+              <h2 className="text-2xl font-avenir-bold mb-6">Get in touch.</h2>
+              <p className="inter-bold">Email: <span className="inter-light">Hi@SymbolTM.com</span></p>
+              <p className="inter-bold">Mobile: <span className="inter-light">+1 480 717 0449</span></p>
+              <p className="inter-bold">Office: <span className="inter-light">7202 North 15th Pl., Phoenix, AZ 85020</span></p>
+        </div>
+        <br></br>
       </section>
+
+      <br></br>
     </div>
   );
 };
 
-export default UpValleyPage;
+export default FisherPricePage;
