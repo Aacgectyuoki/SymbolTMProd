@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import enchantmentresortvideo from '../assets/images/Enchantment_-_Trail House_15sec_MT2_HD_PRIMARY_IMAGE.mp4';
+import enchantmentresortvideo from '../assets/images/Enchantment_-_Trail_House_15sec_MT2_HD_PRIMARY_IMAGE.mp4';
 import enchantmentresort01 from '../assets/images/SymbolTM_Enchantment_01.png';
 import enchantmentresort02 from '../assets/images/SymbolTM_Enchantment_02.png';
 import enchantmentresort03 from '../assets/images/SymbolTM_Enchantment_03.jpg';
