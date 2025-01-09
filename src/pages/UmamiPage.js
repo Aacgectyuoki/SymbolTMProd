@@ -33,6 +33,21 @@ const UmamiPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+        
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          Umami Burgers
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          SBE / C3
+          </p>
+        </div>
+        
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
@@ -80,12 +95,12 @@ const UmamiPage = () => {
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
           <a
-            href="https://www.sbe.com/restaurants/umami-burger.com"
+            href="https://gobycitizens.com/umami-burger"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            www.sbe.com/restaurants/umami-burger.com
+            gobycitizens.com/umami-burger
           </a>
           <br></br>
           ROLE: Branding, Design, and Strategy

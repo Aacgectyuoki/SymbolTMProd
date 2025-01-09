@@ -35,6 +35,21 @@ const HarvardXPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          HarvardX
+          </p>  
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Harvard University
+          </p>  
+        </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
@@ -58,26 +73,6 @@ const HarvardXPage = () => {
           </p>
         </div>
 
-        {/* <div className="mb-8">
-          <h2 className="text-2xl font-semibold mb-2">Result</h2>
-          <p className="text-gray-700">
-          In two years, edX has grown more than 3 million worldwide users, 60 universities and over 300 courses online.
-          </p>
-        </div> */}
-{/* Blockquote Needed!!!
-        <blockquote className="italic bg-gray-100 p-6 shadow-lg mb-8">
-          <p>
-            “Now as <span className="font-bold">Plainsight</span>, we have
-            established ourselves as a power player delivering production-ready
-            vision AI solutions. Industry leaders have recognized{' '}
-            <span className="font-bold">Plainsight</span> for solving problems where
-            others have failed, and for helping customers see and activate the
-            potential of their data through smart, simple, and effective use of
-            vision AI.”
-          </p>
-          <p className="text-right mt-4">- Carlos Anchía, CEO of Plainsight</p>
-        </blockquote> */}
-
         {/* Image Gallery */}
         <div className="mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -96,12 +91,12 @@ const HarvardXPage = () => {
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
           <a
-            href="https://harvardx.harvard.edu"
+            href="https://www.vpal.harvard.edu/harvardx/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            harvardx.harvard.edu
+            www.vpal.harvard.edu/harvardx/
           </a>
           <br></br>
           ROLE: Branding, Design, and Strategy

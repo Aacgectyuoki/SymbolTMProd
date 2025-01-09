@@ -32,6 +32,20 @@ const ClimateVictoryGardensPage = () => {
         style={{ maxWidth: '1400px' }}
       >
         <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          Climate Victory Gardens
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Green America
+          </p>
+        </div>
+
+        <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
           Green America is a nonprofit membership organization based in the United States that promotes 
@@ -50,7 +64,13 @@ const ClimateVictoryGardensPage = () => {
           <br></br><br></br>
           Results: The campaign has grown new donators and developed more than 8,000 gardens. 
           <br></br><br></br>
-          “Michael was very patient with our feedback and requests. In the end, he gave us a great logo. Thank you!!!” – GreenAmerica.org 
+          <blockquote className="italic bg-gray-100 p-6 shadow-lg mb-8">
+            <p>
+            “Michael was very patient with our feedback and requests. 
+            In the end, he gave us a great logo. Thank you!!!”
+            </p>
+            <p className="text-right mt-4">– GreenAmerica.org </p>
+          </blockquote>
           </p>
         </div>
 

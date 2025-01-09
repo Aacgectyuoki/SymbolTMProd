@@ -101,7 +101,7 @@ const DefaultPage = () => {
           <h3 className="text-2xl font-avenir-bold mb-6">
             <span className="font-avenir-bold">Hello:</span>
             <span className="font-avenir-light"> Symbol<span style={{ verticalAlign: 'super', fontSize: '0.6em', position: 'relative', top: '0em' }}>TM </span>
-              is a branding agency designed to solve critical business issues. 
+              is a branding agency designed to solve critical business solutions. 
              We grow value for clients through a considered approach to Brand Discovery, 
              Brand Strategy, Brand Identity and Brand Management. 
              With hundreds of project consultants (such as the new UPS logo, the MSN Butterfly, reorganized with Marriott International), 

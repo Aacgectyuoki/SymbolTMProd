@@ -30,6 +30,20 @@ const IngenioPage = () => {
         style={{ maxWidth: '1400px' }}
       >
         <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          IngenioRx
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Anthem, Inc.
+          </p>
+        </div>
+
+        <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
           Anthem, one of the nation’s largest health benefits companies, announced it was establishing a new pharmacy benefits service.
@@ -78,14 +92,14 @@ const IngenioPage = () => {
         {/* Learn More Section */}
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <a
+          {/* <a
             href="https://www.Ingenio-Rx.com"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
             www.Ingenio-Rx.com
-          </a>
+          </a> */}
           <br></br>
           ROLE: Branding, Design, and Strategy
         </div>

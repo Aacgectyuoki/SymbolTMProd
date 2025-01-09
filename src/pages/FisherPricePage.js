@@ -33,6 +33,21 @@ const FisherPricePage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          Fisher-Price
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Mattel Inc. and Fisher-Price
+          </p>
+        </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
@@ -93,9 +108,9 @@ const FisherPricePage = () => {
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            https://vimeo.com/93183680
+            vimeo.com/93183680
           </a>
-          <br></br>
+          {/* <br></br>
           <a
             href="https://https://vimeo.com/93183557"
             target="_blank"
@@ -103,7 +118,7 @@ const FisherPricePage = () => {
             className="text-blue-600 hover:underline"
           >
             https://vimeo.com/93183557
-          </a>
+          </a> */}
           <br></br>
           ROLE: Branding, Design, and Strategy
         </div>

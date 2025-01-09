@@ -37,6 +37,21 @@ const BiophiliaPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          Biophilia Herbals
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Jude Luth, Founder & CEO
+          </p>
+        </div>
+        
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
@@ -65,19 +80,6 @@ DELIVERABLES: Brand Positioning, Logo, Sub-Logos Products, Design System, Brand 
           The solution focused on black, white, gray, and silver tones, with a handmade industrial font family.
           </p>
         </div>
-{/* Blockquote Needed!!!
-        <blockquote className="italic bg-gray-100 p-6 shadow-lg mb-8">
-          <p>
-            “Now as <span className="font-bold">Plainsight</span>, we have
-            established ourselves as a power player delivering production-ready
-            vision AI solutions. Industry leaders have recognized{' '}
-            <span className="font-bold">Plainsight</span> for solving problems where
-            others have failed, and for helping customers see and activate the
-            potential of their data through smart, simple, and effective use of
-            vision AI.”
-          </p>
-          <p className="text-right mt-4">- Carlos Anchía, CEO of Plainsight</p>
-        </blockquote> */}
 
         {/* Image Gallery */}
         <div className="mb-8">

@@ -33,6 +33,20 @@ const ArizonaBiltmorePage = () => {
         style={{ maxWidth: '1400px' }}
       >
         <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brands</h2>
+          <p className="text-gray-700">
+          Arizona Biltmore: Celebrating 90th Years
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Arizona Biltmore, A Waldorf Astoria Resort
+          </p>
+        </div>
+
+        <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
           Arizona Biltmore, A Waldorf Astoria Resort, is a historical resort inspired by architect Frank Lloyd Wright. 
@@ -70,14 +84,14 @@ const ArizonaBiltmorePage = () => {
         {/* Learn More Section */}
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <a
+          {/* <a
             href="https://www.arizonabiltmore.com/special-offers/90years/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
             www.arizonabiltmore.com/special-offers/90years/
-          </a>
+          </a> */}
           <br></br>
           ROLE: Branding, Design, and Strategy
         </div>

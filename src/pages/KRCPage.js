@@ -23,7 +23,7 @@ const KRCPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
-        <h1 className="text-4xl font-bold mb-2">KRC Research</h1>
+        <h1 className="text-4xl font-bold mb-2">KRC Research: Our Insights. Your Breakthroughs.</h1>
         <div className="h-2"></div>
         {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
         <img
@@ -38,6 +38,21 @@ const KRCPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+        <p className="text-gray-700">
+        KRC Research
+        </p>
+      </div>
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Client</h2>
+        <p className="text-gray-700">
+        KRC Research and Weber Shandwick
+        </p>
+      </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">

@@ -33,6 +33,20 @@ const GSMAPage = () => {
         style={{ maxWidth: '1400px' }}
       >
         <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          Make The NetWork
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          GSMA
+          </p>
+        </div>
+
+        <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
           The Open Internet is critical to the development of society as a whole. 
@@ -72,7 +86,7 @@ const GSMAPage = () => {
         {/* Learn More Section */}
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
-          <a
+          {/* <a
             href="https://www.MakeTheNetwork.eu/"
             target="_blank"
             rel="noopener noreferrer"
@@ -88,7 +102,7 @@ const GSMAPage = () => {
             className="text-blue-600 hover:underline"
           >
             @MTNWEurope
-          </a>
+          </a> */}
           <br></br>
           ROLE: Branding, Design, and Strategy
         </div>

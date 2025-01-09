@@ -23,7 +23,7 @@ const edXPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
-        <h1 className="text-4xl font-bold mb-2">edX</h1>
+        <h1 className="text-4xl font-bold mb-2">edX: The Revolution of Education</h1>
         <div className="h-2"></div>
         {/* <p className="text-lg text-gray-600 mb-4">Our Insights. Your Breakthroughs.</p> */}
         <img
@@ -38,6 +38,21 @@ const edXPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+          <p className="text-gray-700">
+          edX
+          </p>
+        </div>
+
+        <div className="mb-8">
+          <h2 className="text-2xl font-semibold mb-2">Client</h2>
+          <p className="text-gray-700">
+          Harvard University & MIT
+          </p>
+        </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
@@ -111,16 +126,7 @@ const edXPage = () => {
         <div className="mb-8">
           <h2 className="text-xl font-bold mb-2">Learn More</h2>
           <a
-            href="https://www.KRCResearch.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-600 hover:underline"
-          >
-            www.edX.org
-          </a>
-          <br></br>
-          <a
-            href="www.youtube.com/watch?v=7pYwGpKMXuA"
+            href="https://www.youtube.com/watch?v=7pYwGpKMXuA"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
@@ -129,12 +135,21 @@ const edXPage = () => {
           </a>
           <br></br>
           <a
-            href="www.youtube.com/watch?v=MJZN700YS0o"
+            href="https://news.mit.edu/2012/edx-launched-0502"
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-600 hover:underline"
           >
-            www.youtube.com/watch?v=MJZN700YS0o
+            news.mit.edu/2012/edx-launched-0502
+          </a>
+          <br></br>
+          <a
+            href="https://news.harvard.edu/gazette/story/2012/05/mit-and-harvard-announce-edx/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 hover:underline"
+          >
+            news.harvard.edu/gazette/story/2012/05/mit-and-harvard-announce-edx
           </a>
           <br></br>
           ROLE: Branding, Design, and Strategy

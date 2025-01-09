@@ -35,6 +35,21 @@ const TheTidesInnPage = () => {
         className="mx-auto px-6 mt-8 w-11/12"
         style={{ maxWidth: '1400px' }}
       >
+              
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Brand</h2>
+        <p className="text-gray-700">
+        The Tides Inn, Irvington, VA
+        </p>
+      </div>
+
+      <div className="mb-8">
+        <h2 className="text-2xl font-semibold mb-2">Client</h2>
+        <p className="text-gray-700">
+        Enchantment Group
+        </p>
+      </div>
+
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
