@@ -31,7 +31,7 @@ const Header = () => {
           alt="SymbolTM"
           className="h-12 cursor-pointer"
           // onClick={() => (window.location.href = '/#')} // dev mode
-          onClick={() => (window.location.href = '/SymbolTMProd/#')} // prod mode
+          onClick={() => (window.location.href = '/#')} // prod mode
         />
 
         {/* Desktop Menu */}
