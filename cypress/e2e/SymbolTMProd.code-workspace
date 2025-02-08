@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "SymbolTMProd",
+			"path": "../.."
+		},
+		{
+			"name": "node_modules",
+			"path": "../../../Desktop/node_modules"
+		}
+	],
+	"settings": {}
+}

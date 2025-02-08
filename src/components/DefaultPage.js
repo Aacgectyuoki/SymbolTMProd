@@ -139,33 +139,54 @@ const DefaultPage = () => {
         </select>
       </section> */}
 
-      {/* Work Showcase */}
-      <section id="work" className="bg-gray-100 p-6">
-        <h2 className="text-2xl font-avenir-bold mb-6">Our Work</h2>
-        <div
-          className="grid justify-center"
-          style={{
-            gridTemplateColumns: 'repeat(auto-fit, 450px)', // Fixed width of 300px for each image
-            gap: '0px', // No gap between images
-            justifyItems: 'center',
-          }}
-        >
-          {filteredProjects.map((project, index) => (
-            <div
-              key={index}
-              className="shadow-lg overflow-hidden"
-              style={{ width: '450px', height: '330px', cursor: 'pointer' }} // Consistent width and height
-              onClick={() => handleProjectClick(project.path)} // Navigate on click
-            >
-              <img
-                src={project.img}
-                alt={project.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+    {/* Work Showcase */}
+    <section id="work" className="bg-gray-100 p-6">
+      <h2 className="text-2xl font-avenir-bold mb-6">Our Work</h2>
+      <div className="grid gap-0">
+        {filteredProjects.map((project, index) => (
+          <div
+            key={index}
+            className="work-item"
+            onClick={() => handleProjectClick(project.path)}
+            style={{ cursor: 'pointer' }}
+          >
+            <img
+              src={project.img}
+              alt={project.name}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
+      </div>
+
+      <style>
+        {`
+          #work .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* Default to 3 images per row */
+            gap: 0; /* Images should always touch */
+          }
+
+          #work .work-item {
+            aspect-ratio: 16 / 9; /* Maintain a consistent image ratio */
+          }
+
+          /* Medium screens (e.g., tablets): 2 images per row */
+          @media (max-width: 1024px) {
+            #work .grid {
+              grid-template-columns: repeat(2, 1fr);
+            }
+          }
+
+          /* Small screens (e.g., mobile): 1 image per row */
+          @media (max-width: 768px) {
+            #work .grid {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }
+        `}
+      </style>
+    </section>
 
       {/* Services Section */}
     <section id="services" className="bg-gray-100 p-6">
