@@ -6,6 +6,7 @@ import wellzyperks from '../assets/images/WellzyPerks.png';
 import marfa from '../assets/images/The_City_of_Marfa.gif';
 import biophilia from '../assets/images/Biophilia_Herbals.gif';
 import enchantmentresort from '../assets/images/Enchantment_Resort.png';
+import care from '../assets/images/Symboltm_Care_01.jpg';
 import plainsightai from '../assets/images/PlainsightAI.gif';
 import ingenio from '../assets/images/SymbolTM_IngenioRx_PRIMARY_IMAGE.jpg';
 import marriott from '../assets/images/Symboltm_Marriott_PRIMARY_IMAGE.jpg';
@@ -39,6 +40,7 @@ const projects = [
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
   { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
+  { name: 'CARE', category: 'Industry', img: care, path: '/projects/care' },
   { name: 'KRC Research', category: 'Technology', img: krc, path: '/projects/krc' },
   { name: 'Umami', category: 'Food & Drinks', img: umami, path: '/projects/umami'},
   { name: 'UPS', category: 'Industry', img: ups, path: '/projects/ups'},
@@ -164,11 +166,13 @@ const DefaultPage = () => {
           #work .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Default to 3 images per row */
-            gap: 0; /* Images should always touch */
+            gap: 0; /* No gaps */
           }
 
-          #work .work-item {
-            aspect-ratio: 16 / 9; /* Maintain a consistent image ratio */
+          #work .work-item img {
+            width: 100%;
+            height: auto; /* Ensures full image is shown height-wise */
+            object-fit: cover; /* Ensures aspect ratio is maintained */
           }
 
           /* Medium screens (e.g., tablets): 2 images per row */

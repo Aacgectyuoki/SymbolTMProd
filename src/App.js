@@ -10,6 +10,7 @@ import WellzyPerksPage from './pages/WellzyPerksPage';
 import MarfaPage from './pages/MarfaPage';
 import BiophiliaPage from './pages/BiophiliaPage';
 import EnchantmentResortPage from './pages/EnchantmentResortPage';
+import CAREPage from './pages/CAREPage';
 import PlainsightAIPage from './pages/PlainsightAIPage';
 import KRCPage from './pages/KRCPage';
 import UmamiPage from './pages/UmamiPage';
@@ -38,6 +39,7 @@ const projectRoutes = [
   { path: '/projects/marfa', element: <MarfaPage /> },
   { path: '/projects/biophilia', element: <BiophiliaPage /> },
   { path: '/projects/enchantmentresort', element: <EnchantmentResortPage /> },
+  { path: '/projects/care', element: <CAREPage /> },
   { path: '/projects/plainsightai', element: <PlainsightAIPage /> },
   { path: '/projects/krc', element: <KRCPage /> },
   { path: '/projects/umami', element: <UmamiPage /> },
