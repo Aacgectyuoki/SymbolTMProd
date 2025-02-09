@@ -39,7 +39,7 @@ const CAREPage = () => {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Brand</h2>
           <p className="text-gray-700">
-          CARE
+          CARE: Where The End of Poverty Begins
           </p>  
         </div>
 
