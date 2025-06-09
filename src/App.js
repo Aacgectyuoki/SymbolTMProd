@@ -6,6 +6,10 @@ import AboutPage from './components/AboutPage';
 import ScrollToTop from './components/ScrollToTop';
 
 // Import all project pages
+import MSNPage from './pages/MSNPage';
+import RBCPage from './pages/RBCPage';
+import AcelaPage from './pages/AcelaPage';
+import AmtrakPage from './pages/AmtrakPage';
 import WellzyPerksPage from './pages/WellzyPerksPage';
 import MarfaPage from './pages/MarfaPage';
 import BiophiliaPage from './pages/BiophiliaPage';
@@ -35,12 +39,24 @@ import GeirNessPage from './pages/GeirNessPage';
 
 // Define project routes in an array
 const projectRoutes = [
-  { path: '/projects/wellzyperks', element: <WellzyPerksPage /> },
-  { path: '/projects/marfa', element: <MarfaPage /> },
-  { path: '/projects/biophilia', element: <BiophiliaPage /> },
-  { path: '/projects/enchantmentresort', element: <EnchantmentResortPage /> },
-  { path: '/projects/care', element: <CAREPage /> },
+  { path: '/projects/rbc', element: <RBCPage /> },
+  { path: '/projects/acela', element: <AcelaPage /> },
+  { path: '/projects/msn', element: <MSNPage /> },
+  { path: '/projects/fisherprice', element: <FisherPricePage /> },
+  { path: '/projects/amtrak', element: <AmtrakPage /> },  
   { path: '/projects/plainsightai', element: <PlainsightAIPage /> },
+  { path: '/projects/biophilia', element: <BiophiliaPage /> },
+  { path: '/projects/harvardx', element: <HarvardXPage /> },
+  { path: '/projects/thecove', element: <TheCovePage /> },
+  { path: '/projects/turvo', element: <TurvoPage /> },
+  { path: '/projects/miiamo', element: <MiiAmoPage /> },
+  { path: '/projects/edx', element: <EdXPage /> },
+  { path: '/projects/thetidesinn', element: <TheTidesInnPage /> },
+  { path: '/projects/geirness', element: <GeirNessPage /> },
+  { path: '/projects/wellzyperks', element: <WellzyPerksPage /> },
+  { path: '/projects/marfa', element: <MarfaPage /> },  
+  { path: '/projects/enchantmentresort', element: <EnchantmentResortPage /> },
+  { path: '/projects/care', element: <CAREPage /> },  
   { path: '/projects/krc', element: <KRCPage /> },
   { path: '/projects/umami', element: <UmamiPage /> },
   { path: '/projects/ups', element: <UPSPage /> },
@@ -53,14 +69,6 @@ const projectRoutes = [
   { path: '/projects/marriott', element: <MarriottPage /> },
   { path: '/projects/bobanddolores', element: <BobAndDoloresPage /> },
   { path: '/projects/upvalley', element: <UpValleyPage /> },
-  { path: '/projects/fisherprice', element: <FisherPricePage /> },
-  { path: '/projects/thetidesinn', element: <TheTidesInnPage /> },
-  { path: '/projects/thecove', element: <TheCovePage /> },
-  { path: '/projects/turvo', element: <TurvoPage /> },
-  { path: '/projects/miiamo', element: <MiiAmoPage /> },
-  { path: '/projects/edx', element: <EdXPage /> },
-  { path: '/projects/harvardx', element: <HarvardXPage /> },
-  { path: '/projects/geirness', element: <GeirNessPage /> },
 ];
 
 function App() {

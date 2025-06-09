@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import { useNavigate } from 'react-router-dom';
 // import wellzyperks from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
+import msn from '../assets/images/Symboltm_msn_ad_flying.gif';
+import rbc from '../assets/images/Symboltm_RBC_01.jpg';
+import acela from '../assets/images/Symboltm_Acela_02.jpg';
+import amtrak from '../assets/images/Symboltm_Amtrak_05.jpg';
 import wellzyperks from '../assets/images/WellzyPerks.png';
 import marfa from '../assets/images/The_City_of_Marfa.gif';
 import biophilia from '../assets/images/Biophilia_Herbals.gif';
@@ -35,6 +39,10 @@ import geirness from '../assets/images/Symboltm_Geirness_PRIMARY_IMAGE.jpg';
 
 // Projects with categories
 const projects = [
+  { name: 'MSN', category: 'Technology', img: msn, path: '/projects/msn' },
+  { name: 'RBC', category: 'Industry', img: rbc, path: '/projects/rbc' },
+  { name: 'Acela', category: 'Transportation', img: acela, path: '/projects/acela' },
+  { name: 'Amtrak', category: 'Hospitality', img: amtrak, path: '/projects/amtrak' },
   { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
   { name: 'Biophilia', category: 'Hospitality', img: biophilia, path: '/projects/biophilia' },
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
