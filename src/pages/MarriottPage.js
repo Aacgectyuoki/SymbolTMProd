@@ -71,7 +71,7 @@ const MarriottPage = () => {
           <h2 className="text-2xl font-semibold mb-2">Action</h2>
           <p className="text-gray-700">
           Meeting with the Vice President Global Marketing, Global Marketing & Sales and 
-          Mr. J.W. Marriott, Jr.    and walked through a proposal to relaunch the marketing management. 
+          Mr. J.W. Marriott, Jr. and walked through a proposal to relaunch the marketing management. 
           It was an approved development for the Marriott, JW Marriott and C-F-R-S-T brands, 
           Marriott Rewards and support second tier brand services.
           <br></br><br></br>
