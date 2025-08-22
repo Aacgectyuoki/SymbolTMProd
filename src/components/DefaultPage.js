@@ -39,12 +39,15 @@ import geirness from '../assets/images/Symboltm_Geirness_PRIMARY_IMAGE.jpg';
 
 // Projects with categories
 const projects = [
-  { name: 'MSN', category: 'Technology', img: msn, path: '/projects/msn' },
-  { name: 'RBC', category: 'Industry', img: rbc, path: '/projects/rbc' },
-  { name: 'Acela', category: 'Transportation', img: acela, path: '/projects/acela' },
-  { name: 'Amtrak', category: 'Hospitality', img: amtrak, path: '/projects/amtrak' },
   { name: 'PlainsightAI', category: 'Technology', img: plainsightai, path: '/projects/plainsightai' },
   { name: 'Biophilia', category: 'Hospitality', img: biophilia, path: '/projects/biophilia' },
+  { name: 'HarvardX', category: 'Technology', img: harvardx, path: '/projects/harvardx'},
+  { name: 'The Cove', category: 'Hospitality', img: thecove, path: '/projects/thecove'},
+  { name: 'Turvo', category: 'Technology', img: turvo, path: '/projects/turvo'},
+  { name: 'Mii Amo', category: 'Hospitality', img: miiamo, path: '/projects/miiamo'},
+  { name: 'EdX', category: 'Technology', img: edx, path: '/projects/edx'},
+  { name: 'The Tides Inn', category: 'Hospitality', img: thetidesinn, path: '/projects/thetidesinn'},
+  { name: 'Geir Ness', category: 'Industry', img: geirness, path: '/projects/geirness'},
   { name: 'WellzyPerks', category: 'Food & Drinks', img: wellzyperks, path: '/projects/wellzyperks' },
   { name: 'Marfa', category: 'Hospitality', img: marfa, path: '/projects/marfa' },
   { name: 'Enchantment Resort', category: 'Hospitality', img: enchantmentresort, path: '/projects/enchantmentresort' },
@@ -61,14 +64,11 @@ const projects = [
   { name: 'Marriott Hotels', category: 'Hospitality', img: marriott, path: '/projects/marriott'},
   { name: 'Bob & Dolores Hope Foundation', category: 'Industry', img: bobanddolores, path: '/projects/bobanddolores'},
   { name: 'UpValley Inn & Hot Springs', category: 'Hospitality', img: upvalley, path: '/projects/upvalley'},
+  { name: 'RBC', category: 'Industry', img: rbc, path: '/projects/rbc' },
+  { name: 'Acela', category: 'Transportation', img: acela, path: '/projects/acela' },
+  { name: 'MSN', category: 'Technology', img: msn, path: '/projects/msn' },
   { name: 'Fisher Price', category: 'Industry', img: fisherprice, path: '/projects/fisherprice'},
-  { name: 'The Tides Inn', category: 'Hospitality', img: thetidesinn, path: '/projects/thetidesinn'},
-  { name: 'The Cove', category: 'Hospitality', img: thecove, path: '/projects/thecove'},
-  { name: 'Turvo', category: 'Technology', img: turvo, path: '/projects/turvo'},
-  { name: 'Mii Amo', category: 'Hospitality', img: miiamo, path: '/projects/miiamo'},
-  { name: 'EdX', category: 'Technology', img: edx, path: '/projects/edx'},
-  { name: 'HarvardX', category: 'Technology', img: harvardx, path: '/projects/harvardx'},
-  { name: 'Geir Ness', category: 'Industry', img: geirness, path: '/projects/geirness'},
+  { name: 'Amtrak', category: 'Hospitality', img: amtrak, path: '/projects/amtrak' },
 ];
 
 // Category options
