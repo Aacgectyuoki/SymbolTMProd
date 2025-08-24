@@ -61,23 +61,27 @@ const MarriottPage = () => {
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Background</h2>
           <p className="text-gray-700">
-          Marriott International is the leader hospitality worldwide, managing a portfolio of over 6900 hotels.
+          Marriott International is the leader in hospitality worldwide, managing a portfolio of over 6,900 hotels.
           <br></br><br></br>
-          Marriott was growing quickly, however, the brand family had lagged through marketing and experiences.
+          Marriott International was quickly growing with new brands, 
+          including purchasing Renaissance Hotels & Resorts and creating JW Marriott Hotels & Resorts. 
+          But the growth of global marketing has increased the cost and reduced the brands.
           </p>
         </div>
 
         <div className="mb-8">
           <h2 className="text-2xl font-semibold mb-2">Action</h2>
           <p className="text-gray-700">
-          Meeting with the Vice President Global Marketing, Global Marketing & Sales and 
+          We met with the Vice President Global Marketing, Global Marketing & Sales and 
           Mr. J.W. Marriott, Jr. and walked through a proposal to relaunch the marketing management. 
           It was an approved development for the Marriott, JW Marriott and C-F-R-S-T brands, 
           Marriott Rewards and support second tier brand services.
           <br></br><br></br>
-          This involved many different brands, sub-brands, services and products. The goal was to simplify brand architecture. 
+          Our goal was to simplify brand systems and make this the first global online brand management system. 
+          It provides different brands, sub-brands, services and products. 
+          At the center of the brand architecture system, it focused Marriott Rewards as a longer guest relationship.
           <br></br><br></br>
-          The result would be mindful of Marriott Rewards and support one go-to website for all brands. A massive project creating a big impact.
+          A massive marketing project turned into a giant brand guidelines momentum, through a single internal online site.
           </p>
         </div>
 
@@ -133,7 +137,7 @@ const MarriottPage = () => {
             
           </a>
           <br></br>
-          ROLE: Branding, Design, and Strategy
+          ROLE: Michael Thibodeau - creative director, strategist and lead manager working with Marriott International, FutureBrand, McCann-Erickson Worldwide
         </div>
 
         <br></br>
