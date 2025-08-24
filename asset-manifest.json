@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.918f62eb.css",
-    "main.js": "/static/js/main.83f7b1a3.js",
+    "main.js": "/static/js/main.65e81a35.js",
     "static/js/453.60505c6c.chunk.js": "/static/js/453.60505c6c.chunk.js",
     "static/media/PlainsightAI.gif": "/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
@@ -204,6 +204,7 @@
     "static/media/Symboltm_Fisher_Price_02.jpg": "/static/media/Symboltm_Fisher_Price_02.bf9811fb2bbf601b06e8.jpg",
     "static/media/Symboltm_edX_05.jpg": "/static/media/Symboltm_edX_05.62e48b7bdeadfd6eeec9.jpg",
     "static/media/Symboltm_Geirness_02.jpg": "/static/media/Symboltm_Geirness_02.24cf91a2aaf3a9c2bc72.jpg",
+    "static/media/SymbolTM_AB_Image_03.jpg": "/static/media/SymbolTM_AB_Image_03.e849476e075a2ce043ac.jpg",
     "static/media/Symboltm_Fisher-Price_03.jpg": "/static/media/Symboltm_Fisher-Price_03.d7c9f74ad4a250ffd6fa.jpg",
     "static/media/Symboltm_MSN_08.jpg": "/static/media/Symboltm_MSN_08.baa5abd610f8ec90696c.jpg",
     "static/media/Symboltm_edX_02.jpg": "/static/media/Symboltm_edX_02.b78a81e7d45140f16cd8.jpg",
@@ -238,7 +239,6 @@
     "static/media/SymbolTM_AB_Image_02.jpg": "/static/media/SymbolTM_AB_Image_02.5e1db597b7c1aff75d83.jpg",
     "static/media/Symboltm_HarvardX_03.jpg": "/static/media/Symboltm_HarvardX_03.d25bc458797934212703.jpg",
     "static/media/SymbolTM_AB_Image_01.jpg": "/static/media/SymbolTM_AB_Image_01.e71c384fc2abcf8cca2b.jpg",
-    "static/media/SymbolTM_AB_Image_03.jpg": "/static/media/SymbolTM_AB_Image_03.3c8014c0394a63f913fa.jpg",
     "static/media/Symboltm_GSMA_01.jpg": "/static/media/Symboltm_GSMA_01.f37a544bbb43b89ccd44.jpg",
     "static/media/SymbolTM_WellzyPerks_03.jpg": "/static/media/SymbolTM_WellzyPerks_03.f4ea4e41109cf4697756.jpg",
     "static/media/SymbolTM_NoCuffs_Image_02.jpg": "/static/media/SymbolTM_NoCuffs_Image_02.9d893a0f6715f38b8793.jpg",
@@ -260,11 +260,11 @@
     "static/media/symboltm-logo.png": "/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/index.html",
     "main.918f62eb.css.map": "/static/css/main.918f62eb.css.map",
-    "main.83f7b1a3.js.map": "/static/js/main.83f7b1a3.js.map",
+    "main.65e81a35.js.map": "/static/js/main.65e81a35.js.map",
     "453.60505c6c.chunk.js.map": "/static/js/453.60505c6c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.918f62eb.css",
-    "static/js/main.83f7b1a3.js"
+    "static/js/main.65e81a35.js"
   ]
 }
