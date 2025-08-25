@@ -91,7 +91,7 @@ const MarriottPage = () => {
             integrity and dependability, that’s an act of trust. We have built trusted brands over 75 years, 
             and today we earn that trust with everything we do.”
           </p>
-          <p className="text-right mt-4">- J.W. Marriott, jr.</p>
+          <p className="text-right mt-4">- J.W. Marriott, Jr.</p>
         </blockquote>
 
         <div className="mb-8">
