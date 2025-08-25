@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 // import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DefaultPage from './components/DefaultPage'; // Adjust path based on folder structure
@@ -75,15 +75,17 @@ function App() {
   return (
     <Router>
       <ScrollToTop /> {/* Add ScrollToTop component here */}
-      <Routes>
-        <Route path="/" element={<DefaultPage />} />
-        <Route path="/our-brand-story" element={<AboutPage />} />
+      <Suspense fallback={<div />}>
+        <Routes>
+          <Route path="/" element={<DefaultPage />} />
+          <Route path="/our-brand-story" element={<AboutPage />} />
 
-        {/* Map through projectRoutes array to generate project routes */}
-        {projectRoutes.map((route, index) => (
-          <Route key={index} path={route.path} element={route.element} />
-        ))}
-      </Routes>
+          {/* Map through projectRoutes array to generate project routes */}
+          {projectRoutes.map((route, index) => (
+            <Route key={index} path={route.path} element={route.element} />
+          ))}
+        </Routes>
+      </Suspense>
     </Router>
   );
 }
