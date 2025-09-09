@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import krc01 from '../assets/images/Symboltm_KRC_01.jpg';
 import krc02 from '../assets/images/Symboltm_KRC_02.jpg';
@@ -14,8 +16,14 @@ import krc10 from '../assets/images/Symboltm_KRC_10.jpg';
 import krc11 from '../assets/images/Symboltm_KRC_11.jpg';
 
 const KRCPage = () => {
+  const meta = projectMeta('KRC Research', 'krc');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="KRC Research" slug="krc" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'krc'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

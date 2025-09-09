@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import biophilia from '../assets/images/Biophilia_Herbals.gif';
 import biophilia02 from '../assets/images/SymbolTM_Biophilia_02.png';
 import biophilia03 from '../assets/images/SymbolTM_Biophilia_03.png';
@@ -13,8 +15,14 @@ import biophilia10 from '../assets/images/SymbolTM_Biophilia_10.png';
 import biophilia11 from '../assets/images/SymbolTM_Biophilia_11.png';
 
 const BiophiliaPage = () => {
+  const meta = projectMeta('Biophilia Herbals', 'biophilia');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Biophilia Herbals" slug="biophilia" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'biophilia'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

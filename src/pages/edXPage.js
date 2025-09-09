@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import edX from '../assets/images/Symboltm_edX__PRIMARY_IMAGE.gif';
 import edx01 from '../assets/images/Symboltm_edX_01.jpg';
 import edx02 from '../assets/images/Symboltm_edX_02.jpg';
@@ -14,8 +16,14 @@ import edx10 from '../assets/images/Symboltm_edX_10.jpg';
 import edx11 from '../assets/images/Symboltm_edX_11.jpg';
 
 const edXPage = () => {
+  const meta = projectMeta('edX', 'edx');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="edX" slug="edx" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'edx'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

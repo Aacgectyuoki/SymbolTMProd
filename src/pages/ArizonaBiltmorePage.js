@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import arizonabiltmore from '../assets/images/SymbolTM_AB_Image_PRIMARY_IMAGE.jpg';
 import arizonabiltmore01 from '../assets/images/SymbolTM_AB_Image_01.jpg';
 import arizonabiltmore02 from '../assets/images/SymbolTM_AB_Image_02.jpg';
@@ -8,8 +10,14 @@ import arizonabiltmore04 from '../assets/images/SymbolTM_AB_Image_04.jpg';
 import arizonabiltmore05 from '../assets/images/SymbolTM_AB_Image_05.jpg';
 
 const ArizonaBiltmorePage = () => {
+  const meta = projectMeta('Arizona Biltmore', 'arizonabiltmore');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Arizona Biltmore" slug="arizonabiltmore" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'arizonabiltmore'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

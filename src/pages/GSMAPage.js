@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import gsma from '../assets/images/Symboltm_GSMA_PRIMARY_IMAGE.jpg';
 import gsma01 from '../assets/images/Symboltm_GSMA_01.jpg';
 import gsma02 from '../assets/images/Symboltm_GSMA_02.jpg';
@@ -8,8 +10,14 @@ import gsma04 from '../assets/images/Symboltm_GSMA_04.jpg';
 import gsma05 from '../assets/images/Symboltm_GSMA_05.jpg';
 
 const GSMAPage = () => {
+  const meta = projectMeta('GSMA', 'gsma');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="GSMA" slug="gsma" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'gsma'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

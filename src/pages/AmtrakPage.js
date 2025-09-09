@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import amtrak from '../assets/images/Symboltm_Amtrak_05.jpg';
 import amtrak01 from '../assets/images/Symboltm_Amtrak_02.jpg';
 import amtrak02 from '../assets/images/Symboltm_Amtrak_06.jpg';
@@ -9,8 +11,13 @@ import amtrak05 from '../assets/images/Symboltm_Amtrak_20.jpg';
 
 
 const AmtrakPage = () => {
+  const meta = projectMeta('Amtrak', 'amtrak');
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Amtrak" slug="amtrak" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'amtrak'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

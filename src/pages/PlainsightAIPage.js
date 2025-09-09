@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import plainsightai from '../assets/images/PlainsightAI.gif';
 import plainsight02 from '../assets/images/SymbolTM_Plainsight_02.png';
 import plainsight03 from '../assets/images/SymbolTM_Plainsight_03.png';
@@ -11,8 +13,14 @@ import plainsight08 from '../assets/images/SymbolTM_Plainsight_08.png';
 import plainsight09 from '../assets/images/SymbolTM_Plainsight_09.png';
 
 const PlainsightAIPage = () => {
+  const meta = projectMeta('PlainsightAI', 'plainsightai');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="PlainsightAI" slug="plainsightai" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'plainsightai'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

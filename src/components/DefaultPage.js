@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
+import Seo, { OrganizationJsonLd, LocalBusinessJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { homeMeta, breadcrumbs } from '../seo/metaTemplates';
 import { useNavigate } from 'react-router-dom';
 // import wellzyperks from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 import msn from '../assets/images/Symboltm_msn_ad_flying.gif';
@@ -101,6 +103,11 @@ const DefaultPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={homeMeta.title} description={homeMeta.description} url={homeMeta.url}>
+        <OrganizationJsonLd />
+        <LocalBusinessJsonLd />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home'])} />
+      </Seo>
       {/* Header */}
       <Header /> {/* Use the Header component here */}
 

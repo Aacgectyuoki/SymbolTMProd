@@ -1,13 +1,21 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import enchantmentresortvideo from '../assets/images/Enchantment_-_Trail_House_15sec_MT2_HD_PRIMARY_IMAGE.mp4';
 import enchantmentresort01 from '../assets/images/SymbolTM_Enchantment_01.png';
 import enchantmentresort02 from '../assets/images/SymbolTM_Enchantment_02.png';
 import enchantmentresort03 from '../assets/images/SymbolTM_Enchantment_03.jpg';
 
 const EnchantmentResortPage = () => {
+  const meta = projectMeta('Enchantment Resort', 'enchantmentresort');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Enchantment Resort" slug="enchantmentresort" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'enchantmentresort'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

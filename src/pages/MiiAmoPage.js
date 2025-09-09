@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import miiamo from '../assets/images/SymbolTM_MiiAmo_PRIMARY_IMAGE.png';
 import miiamo01 from '../assets/images/SymbolTM_MiiAmo_01.png';
 import miiamo02 from '../assets/images/SymbolTM_MiiAmo_02.png';
@@ -9,8 +11,14 @@ import miiamo05 from '../assets/images/SymbolTM_MiiAmo_05.png';
 import miiamo06 from '../assets/images/SymbolTM_MiiAmo_06.png';
 
 const MiiAmoPage = () => {
+  const meta = projectMeta('Mii Amo', 'miiamo');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Mii Amo" slug="miiamo" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'miiamo'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

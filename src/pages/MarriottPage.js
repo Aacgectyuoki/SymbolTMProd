@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import marriott from '../assets/images/Symboltm_Marriott_PRIMARY_IMAGE.jpg';
 import marriott01 from '../assets/images/SymbolTM_Marriott_01.jpg';
 import marriott02 from '../assets/images/SymbolTM_Marriott_02.jpg';
@@ -19,8 +21,13 @@ import marriott15 from '../assets/images/SymbolTM_Marriott_15.jpg';
 import marriott16 from '../assets/images/SymbolTM_Marriott_16.jpg';
 
 const MarriottPage = () => {
+  const meta = projectMeta('Marriott', 'marriott');
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Marriott" slug="marriott" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'marriott'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

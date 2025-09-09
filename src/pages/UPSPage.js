@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import ups from '../assets/images/Symboltm_UPS_PRIMARY_IMAGE.jpg';
 import ups01 from '../assets/images/Symboltm_UPS_01.jpg';
 import ups02 from '../assets/images/Symboltm_UPS_02.jpg';
@@ -16,8 +18,14 @@ import ups12 from '../assets/images/Symboltm_UPS_12.jpg';
 import ups13 from '../assets/images/Symboltm_UPS_13.jpg';
 
 const UPSPage = () => {
+  const meta = projectMeta('UPS', 'ups');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="UPS" slug="ups" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'ups'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import CARE from '../assets/images/Symboltm_Care_01.jpg';
 import CARE01 from '../assets/images/Symboltm_Care_02.jpg';
 import CARE02 from '../assets/images/Symboltm_Care_03.jpg';
@@ -11,8 +13,14 @@ import CARE07 from '../assets/images/Symboltm_Care_10.jpg';
 import CARE08 from '../assets/images/Symboltm_Care_11.jpg';
 
 const CAREPage = () => {
+  const meta = projectMeta('CARE', 'care');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="CARE" slug="care" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'care'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

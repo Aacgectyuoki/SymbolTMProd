@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import turvo from '../assets/images/SymbolTM_Turvo_PRIMARY_IMAGE.jpg';
 import turvo01 from '../assets/images/SymbolTM_Turvo_01.jpg';
 import turvo02 from '../assets/images/SymbolTM_Turvo_02.jpg';
@@ -11,8 +13,14 @@ import turvo07 from '../assets/images/SymbolTM_Turvo_07.jpg';
 import turvo08 from '../assets/images/SymbolTM_Turvo_08.jpg';
 
 const TurvoPage = () => {
+  const meta = projectMeta('Turvo', 'turvo');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Turvo" slug="turvo" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'turvo'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

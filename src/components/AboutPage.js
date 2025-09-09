@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
+import logosIndustries from '../assets/images/Logos_industires.png';
+import Seo, { OrganizationJsonLd, BreadcrumbsJsonLd, LocalBusinessJsonLd } from '../seo/Seo';
+import { aboutMeta, breadcrumbs } from '../seo/metaTemplates';
 // import logo from '../assets/images/symboltm-logo.png';
 
 
@@ -136,6 +139,11 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
+      <Seo title={aboutMeta.title} description={aboutMeta.description} url={aboutMeta.url}>
+        <OrganizationJsonLd />
+        <LocalBusinessJsonLd />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'our-brand-story'])} />
+      </Seo>
       {/* Header */}
       <Header />
 
@@ -178,7 +186,7 @@ const AboutPage = () => {
             {/* Add logos image here */}
             <div className="my-6 flex justify-center">
               <img
-                src={require('../assets/images/Logos_industires.png')} // Update with your actual path
+                src={logosIndustries}
                 alt="Logos of companies Michael has worked with"
                 className="max-w-full h-auto"
               />

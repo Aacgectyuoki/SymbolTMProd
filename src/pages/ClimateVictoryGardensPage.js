@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import cvg from '../assets/images/SymbolTM_CVG_PRIMARY_IMAGE.jpg';
 import cvg01 from '../assets/images/SymbolTM_CVG_01.jpg';
 import cvg02 from '../assets/images/SymbolTM_CVG_02.jpg';
@@ -7,8 +9,14 @@ import cvg03 from '../assets/images/SymbolTM_CVG_03.jpg';
 import cvg04 from '../assets/images/SymbolTM_CVG_04.jpg';
 
 const ClimateVictoryGardensPage = () => {
+  const meta = projectMeta('Climate Victory Gardens', 'climatevictorygardens');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Climate Victory Gardens" slug="climatevictorygardens" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'climatevictorygardens'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

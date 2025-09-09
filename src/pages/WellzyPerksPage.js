@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 import wellzyperks01 from '../assets/images/SymbolTM_WellzyPerks_01.jpg';
 import wellzyperks02 from '../assets/images/SymbolTM_WellzyPerks_02.jpg';
@@ -15,8 +17,14 @@ import wellzyperks11 from '../assets/images/SymbolTM_WellzyPerks_11.jpg';
 import wellzyperks12 from '../assets/images/SymbolTM_WellzyPerks_12.jpg';
 
 const WellzyPerksPage = () => {
+  const meta = projectMeta('WellzyPerks', 'wellzyperks');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="WellzyPerks" slug="wellzyperks" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'wellzyperks'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

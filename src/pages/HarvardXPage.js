@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import harvardX from '../assets/images/Symboltm_HarvardX_PRIMARY_IMAGE.jpg';
 import harvardx01 from '../assets/images/Symboltm_HarvardX_01.jpg';
 import harvardx02 from '../assets/images/Symboltm_HarvardX_02.jpg';
@@ -11,8 +13,14 @@ import harvardx07 from '../assets/images/Symboltm_HarvardX_07.jpg';
 import harvardx08 from '../assets/images/Symboltm_HarvardX_08.jpg';
 
 const HarvardXPage = () => {
+  const meta = projectMeta('HarvardX', 'harvardx');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="HarvardX" slug="harvardx" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'harvardx'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import acela from '../assets/images/Symboltm_Acela_02.jpg';
 import acela02 from '../assets/images/Symboltm_Acela_01.jpg';
 import acela03 from '../assets/images/Symboltm_Acela_04.jpg';
@@ -18,8 +20,13 @@ import acela15 from '../assets/images/Symboltm_Acela_18.jpg';
 
 
 const AcelaPage = () => {
+  const meta = projectMeta('Acela', 'acela');
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Acela" slug="acela" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'acela'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

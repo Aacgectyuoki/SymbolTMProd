@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import fisherprice from '../assets/images/Symboltm_Fisher_Price_PRIMARY_IMAGE.jpg';
 import fisherprice01 from '../assets/images/Symboltm_Fisher-Price_01.jpg';
 import fisherprice02 from '../assets/images/Symboltm_Fisher_Price_02.jpg';
@@ -9,8 +11,13 @@ import fisherprice05 from '../assets/images/Symboltm_Fisher_Price_05.jpg';
 import fisherprice06 from '../assets/images/Symboltm_Fisher_Price_06.jpg';
 
 const FisherPricePage = () => {
+  const meta = projectMeta('Fisher-Price', 'fisherprice');
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="Fisher-Price" slug="fisherprice" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'fisherprice'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

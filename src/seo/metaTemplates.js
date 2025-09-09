@@ -2,9 +2,23 @@ export const site = {
     name: 'SymbolTM',
     url: 'https://symboltm.com',
     logo: '/logo192.png',
-    description: 'SymbolTM is a Phoenix-based design and branding studio offering flexible and scalable design solutions.'
+    description: 'SymbolTM is a boutique branding agency in Phoenix, AZ. Logos, icons, graphic design, marketing communications, and digital design. 25+ years. Led by Michael Thibodeau.'
   };
   
+  export const homeMeta = {
+    title: 'SymbolTM | Boutique Branding Agency in Phoenix, AZ',
+    description:
+      'Boutique branding agency in Phoenix solving critical marketing solutions: logos, icons, graphic design, marketing communications, digital design. 25+ years. Led by Michael Thibodeau.',
+    url: 'https://symboltm.com/'
+  };
+
+  export const aboutMeta = {
+    title: 'About SymbolTM | Phoenix Branding Agency led by Michael Thibodeau',
+    description:
+      'SymbolTM is a boutique studio providing Brand Discovery, Strategy, Identity, and Management. Created UPS, MSN Butterfly, Marriott, edX, HarvardX logos. Based in Phoenix.',
+    url: 'https://symboltm.com/our-brand-story'
+  };
+
   export const serviceTemplates = {
     discovery: {
       title: 'Brand Discovery | SymbolTM',

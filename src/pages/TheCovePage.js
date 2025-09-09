@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
+import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import thecove from '../assets/images/SymbolTM_TheCove_PRIMARY_IMAGE.png';
 import thecove01 from '../assets/images/SymbolTM_TheCove_01.jpg';
 import thecove02 from '../assets/images/SymbolTM_TheCove_02.png';
@@ -7,8 +9,14 @@ import thecove03 from '../assets/images/SymbolTM_TheCove_03.png';
 import thecove04 from '../assets/images/SymbolTM_TheCove_04.png';
 
 const TheCovePage = () => {
+  const meta = projectMeta('The Cove', 'thecove');
+
   return (
     <div className="min-h-screen bg-gray-50">
+      <Seo title={meta.title} description={meta.description} url={meta.url}>
+        <CreativeWorkJsonLd name="The Cove" slug="thecove" />
+        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'thecove'])} />
+      </Seo>
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}
