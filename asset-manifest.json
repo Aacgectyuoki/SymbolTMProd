@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.918f62eb.css",
-    "main.js": "/static/js/main.d681ec56.js",
-    "static/js/453.60505c6c.chunk.js": "/static/js/453.60505c6c.chunk.js",
+    "main.js": "/static/js/main.a2f382f7.js",
+    "static/js/453.3f95161b.chunk.js": "/static/js/453.3f95161b.chunk.js",
     "static/media/PlainsightAI.gif": "/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
     "static/media/SymbolTM_Marfa_PRIMARY_IMAGE.gif": "/static/media/SymbolTM_Marfa_PRIMARY_IMAGE.62ce58553bb69ed5b15a.gif",
@@ -260,11 +260,11 @@
     "static/media/symboltm-logo.png": "/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/index.html",
     "main.918f62eb.css.map": "/static/css/main.918f62eb.css.map",
-    "main.d681ec56.js.map": "/static/js/main.d681ec56.js.map",
-    "453.60505c6c.chunk.js.map": "/static/js/453.60505c6c.chunk.js.map"
+    "main.a2f382f7.js.map": "/static/js/main.a2f382f7.js.map",
+    "453.3f95161b.chunk.js.map": "/static/js/453.3f95161b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.918f62eb.css",
-    "static/js/main.d681ec56.js"
+    "static/js/main.a2f382f7.js"
   ]
 }
