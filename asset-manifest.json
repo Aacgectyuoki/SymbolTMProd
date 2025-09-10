@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.918f62eb.css",
-    "main.js": "/static/js/main.ce212819.js",
+    "main.js": "/static/js/main.494ca049.js",
     "static/js/453.3f95161b.chunk.js": "/static/js/453.3f95161b.chunk.js",
     "static/media/PlainsightAI.gif": "/static/media/PlainsightAI.a727a64ab088f83342d2.gif",
     "static/media/Biophilia_Herbals.gif": "/static/media/Biophilia_Herbals.a44268586d2170750586.gif",
@@ -260,11 +260,11 @@
     "static/media/symboltm-logo.png": "/static/media/symboltm-logo.933706fcc8715fa2bbea.png",
     "index.html": "/index.html",
     "main.918f62eb.css.map": "/static/css/main.918f62eb.css.map",
-    "main.ce212819.js.map": "/static/js/main.ce212819.js.map",
+    "main.494ca049.js.map": "/static/js/main.494ca049.js.map",
     "453.3f95161b.chunk.js.map": "/static/js/453.3f95161b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.918f62eb.css",
-    "static/js/main.ce212819.js"
+    "static/js/main.494ca049.js"
   ]
 }
