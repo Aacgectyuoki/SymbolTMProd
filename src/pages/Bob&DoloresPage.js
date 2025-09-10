@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import bobanddolores from '../assets/images/Symboltm_BobHope_PRIMARY_IMAGE.jpg';
 import bobanddolores01 from '../assets/images/Symboltm_BobHope_01.jpg';
@@ -10,10 +10,15 @@ const BobandDoloresPage = () => {
   const meta = projectMeta('Bob & Dolores Hope Foundation', 'bobanddolores');
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Bob & Dolores Hope Foundation" slug="bobanddolores" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'bobanddolores'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Bob & Dolores Hope Foundation', 'bobanddolores'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'bobanddolores']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import logosIndustries from '../assets/images/Logos_industires.png';
-import Seo, { OrganizationJsonLd, BreadcrumbsJsonLd, LocalBusinessJsonLd } from '../seo/Seo';
+import Seo, { createOrganizationData, createLocalBusinessData, createBreadcrumbsData } from '../seo/Seo';
 import { aboutMeta, breadcrumbs } from '../seo/metaTemplates';
 // import logo from '../assets/images/symboltm-logo.png';
 
@@ -139,11 +139,16 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
-      <Seo title={aboutMeta.title} description={aboutMeta.description} url={aboutMeta.url}>
-        <OrganizationJsonLd />
-        <LocalBusinessJsonLd />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'our-brand-story'])} />
-      </Seo>
+      <Seo 
+        title={aboutMeta.title} 
+        description={aboutMeta.description} 
+        url={aboutMeta.url}
+        structuredData={[
+          createOrganizationData(),
+          createLocalBusinessData(),
+          createBreadcrumbsData(breadcrumbs(['Home', 'our-brand-story']))
+        ]}
+      />
       {/* Header */}
       <Header />
 

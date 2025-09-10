@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import ingenio from '../assets/images/SymbolTM_IngenioRx_PRIMARY_IMAGE.jpg';
 import ingenio01 from '../assets/images/Symboltm_Ingeniorx_01.jpg';
@@ -11,10 +11,15 @@ const IngenioPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="IngenioRx" slug="ingenio" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'ingenio'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('IngenioRx', 'ingenio'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'ingenio']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

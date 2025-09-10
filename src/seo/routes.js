@@ -1,0 +1,38 @@
+const routes = [
+  '/',
+  '/our-brand-story',
+  '/projects/rbc',
+  '/projects/acela',
+  '/projects/msn',
+  '/projects/fisherprice',
+  '/projects/amtrak',
+  '/projects/plainsightai',
+  '/projects/biophilia',
+  '/projects/harvardx',
+  '/projects/thecove',
+  '/projects/turvo',
+  '/projects/miiamo',
+  '/projects/edx',
+  '/projects/thetidesinn',
+  '/projects/geirness',
+  '/projects/wellzyperks',
+  '/projects/marfa',
+  '/projects/enchantmentresort',
+  '/projects/care',
+  '/projects/krc',
+  '/projects/umami',
+  '/projects/ups',
+  '/projects/ingenio',
+  '/projects/climatevictorygardens',
+  '/projects/gsma',
+  '/projects/arizonabiltmore',
+  '/projects/theglenrothes',
+  '/projects/nocuffs',
+  '/projects/marriott',
+  '/projects/bobanddolores',
+  '/projects/upvalley',
+];
+
+module.exports = { routes };
+
+

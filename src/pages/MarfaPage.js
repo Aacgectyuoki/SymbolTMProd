@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import marfa from '../assets/images/SymbolTM_Marfa_PRIMARY_IMAGE.gif';
 import marfa01 from '../assets/images/SymbolTM_Marfa_01.png';
@@ -17,10 +17,15 @@ const MarfaPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Marfa" slug="marfa" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'marfa'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Marfa', 'marfa'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'marfa']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

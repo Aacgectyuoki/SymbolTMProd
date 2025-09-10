@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
-import { HashRouter as Router, Route, Routes } from 'react-router-dom';
-// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { HashRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import DefaultPage from './components/DefaultPage'; // Adjust path based on folder structure
 import AboutPage from './components/AboutPage';
 import ScrollToTop from './components/ScrollToTop';

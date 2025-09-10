@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import cvg from '../assets/images/SymbolTM_CVG_PRIMARY_IMAGE.jpg';
 import cvg01 from '../assets/images/SymbolTM_CVG_01.jpg';
@@ -13,10 +13,15 @@ const ClimateVictoryGardensPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Climate Victory Gardens" slug="climatevictorygardens" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'climatevictorygardens'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Climate Victory Gardens', 'climatevictorygardens'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'climatevictorygardens']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

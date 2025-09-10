@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import arizonabiltmore from '../assets/images/SymbolTM_AB_Image_PRIMARY_IMAGE.jpg';
 import arizonabiltmore01 from '../assets/images/SymbolTM_AB_Image_01.jpg';
@@ -14,10 +14,15 @@ const ArizonaBiltmorePage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Arizona Biltmore" slug="arizonabiltmore" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'arizonabiltmore'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Arizona Biltmore', 'arizonabiltmore'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'arizonabiltmore']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

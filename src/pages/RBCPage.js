@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import rbc from '../assets/images/Symboltm_RBC_01.jpg';
 import rbc02 from '../assets/images/Symboltm_RBC_02.jpg';
@@ -16,10 +16,15 @@ const RBCPage = () => {
   const meta = projectMeta('RBC Financial Group', 'rbc');
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="RBC Financial Group" slug="rbc" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'rbc'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('RBC Financial Group', 'rbc'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'rbc']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

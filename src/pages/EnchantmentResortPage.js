@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import enchantmentresortvideo from '../assets/images/Enchantment_-_Trail_House_15sec_MT2_HD_PRIMARY_IMAGE.mp4';
 import enchantmentresort01 from '../assets/images/SymbolTM_Enchantment_01.png';
@@ -12,10 +12,15 @@ const EnchantmentResortPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Enchantment Resort" slug="enchantmentresort" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'enchantmentresort'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Enchantment Resort', 'enchantmentresort'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'enchantmentresort']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

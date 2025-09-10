@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import umami from '../assets/images/Umami_Image_PRIMARY_IMAGE.jpg';
 import umami01 from '../assets/images/Umami_Image_01.jpg';
@@ -15,10 +15,15 @@ const UmamiPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Umami Burger" slug="umami" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'umami'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Umami Burger', 'umami'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'umami']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

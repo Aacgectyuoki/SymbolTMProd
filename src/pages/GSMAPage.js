@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import gsma from '../assets/images/Symboltm_GSMA_PRIMARY_IMAGE.jpg';
 import gsma01 from '../assets/images/Symboltm_GSMA_01.jpg';
@@ -14,10 +14,15 @@ const GSMAPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="GSMA" slug="gsma" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'gsma'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('GSMA', 'gsma'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'gsma']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

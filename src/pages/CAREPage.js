@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import CARE from '../assets/images/Symboltm_Care_01.jpg';
 import CARE01 from '../assets/images/Symboltm_Care_02.jpg';
@@ -17,10 +17,15 @@ const CAREPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="CARE" slug="care" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'care'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('CARE', 'care'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'care']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

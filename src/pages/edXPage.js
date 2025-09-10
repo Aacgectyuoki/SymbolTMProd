@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import edX from '../assets/images/Symboltm_edX__PRIMARY_IMAGE.gif';
 import edx01 from '../assets/images/Symboltm_edX_01.jpg';
@@ -20,10 +20,15 @@ const edXPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="edX" slug="edx" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'edx'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('edX', 'edx'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'edx']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

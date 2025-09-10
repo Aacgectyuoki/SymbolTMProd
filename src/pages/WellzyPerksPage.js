@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import wellzyperksvideo from '../assets/images/WellzyPerks_Video_YouTube_1920x1080pix.mp4';
 import wellzyperks01 from '../assets/images/SymbolTM_WellzyPerks_01.jpg';
@@ -21,10 +21,15 @@ const WellzyPerksPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="WellzyPerks" slug="wellzyperks" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'wellzyperks'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('WellzyPerks', 'wellzyperks'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'wellzyperks']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

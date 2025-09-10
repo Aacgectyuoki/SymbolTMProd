@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import msnVideo from '../assets/images/Symboltm_msn_ad_flying.gif';
 import msn01 from '../assets/images/Symboltm_MSN_01.jpg';
@@ -12,10 +12,15 @@ const MSNPage = () => {
   const meta = projectMeta('MSN', 'msn');
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="MSN" slug="msn" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'msn'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('MSN', 'msn'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'msn']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with Video */}

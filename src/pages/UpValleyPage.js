@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import upvalley from '../assets/images/SymbolTM_UpValleyInn_PRIMARY_IMAGE.jpg';
 import upvalley01 from '../assets/images/SymbolTM_UpValleyInn_01.jpg';
@@ -18,10 +18,15 @@ const FisherPricePage = () => {
   const meta = projectMeta('UpValley Inn & Hot Springs', 'upvalley');
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="UpValley Inn & Hot Springs" slug="upvalley" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'upvalley'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('UpValley Inn & Hot Springs', 'upvalley'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'upvalley']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

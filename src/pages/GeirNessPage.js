@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import geirness from '../assets/images/Symboltm_Geirness_PRIMARY_IMAGE.jpg';
 import geirness01 from '../assets/images/Symboltm_Geirness_01.jpg';
@@ -17,10 +17,15 @@ const GeirNessPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="Geir Ness" slug="geirness" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'geirness'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('Geir Ness', 'geirness'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'geirness']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import nocuffs from '../assets/images/SymbolTM_NoCuffs_Image_PRIMARY_IMAGE.jpg';
 import nocuffs01 from '../assets/images/SymbolTM_NoCuffs_Image_01.jpg';
@@ -12,10 +12,15 @@ const NoCuffsPage = () => {
   const meta = projectMeta('1-800-NoCuffs', 'nocuffs');
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="1-800-NoCuffs" slug="nocuffs" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'nocuffs'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('1-800-NoCuffs', 'nocuffs'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'nocuffs']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

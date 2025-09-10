@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import harvardX from '../assets/images/Symboltm_HarvardX_PRIMARY_IMAGE.jpg';
 import harvardx01 from '../assets/images/Symboltm_HarvardX_01.jpg';
@@ -17,10 +17,15 @@ const HarvardXPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="HarvardX" slug="harvardx" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'harvardx'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('HarvardX', 'harvardx'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'harvardx']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
-import Seo, { CreativeWorkJsonLd, BreadcrumbsJsonLd } from '../seo/Seo';
+import Seo, { createCreativeWorkData, createBreadcrumbsData } from '../seo/Seo';
 import { projectMeta, breadcrumbs } from '../seo/metaTemplates';
 import krc from '../assets/images/Symboltm_KRC_PRIMARY_IMAGE.jpg';
 import krc01 from '../assets/images/Symboltm_KRC_01.jpg';
@@ -20,10 +20,15 @@ const KRCPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Seo title={meta.title} description={meta.description} url={meta.url}>
-        <CreativeWorkJsonLd name="KRC Research" slug="krc" />
-        <BreadcrumbsJsonLd items={breadcrumbs(['Home', 'projects', 'krc'])} />
-      </Seo>
+      <Seo 
+        title={meta.title} 
+        description={meta.description} 
+        url={meta.url}
+        structuredData={[
+          createCreativeWorkData('KRC Research', 'krc'),
+          createBreadcrumbsData(breadcrumbs(['Home', 'projects', 'krc']))
+        ]}
+      />
       <Header /> {/* Reuse shared Header */}
 
       {/* Main Hero Section with GIF */}
